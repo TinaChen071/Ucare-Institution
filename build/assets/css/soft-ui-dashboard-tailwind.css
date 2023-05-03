@@ -1980,6 +1980,16 @@ h6 {
   border-top-right-radius: 0.5rem;
 }
 
+.rounded-l-lg {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-l-full {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
 .rounded-bl-none {
   border-bottom-left-radius: 0px;
 }
@@ -2188,6 +2198,10 @@ h6 {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-white\/75 {
+  background-color: rgb(255 255 255 / 0.75);
 }
 
 .bg-gradient-to-r {
