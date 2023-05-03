@@ -1,0 +1,38 @@
+/*!
+
+=========================================================
+* Soft UI Dashboard Tailwind - v1.0.4
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-tailwind
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (site.license)
+
+* Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn--default {
+        @apply px-0.38 py-0.38 my-0 mx-4  text-sm  flex items-center whitespace-nowrap  transition-colors;
+    }
+    .btn--hover {
+        @apply hover:shadow-soft-xl hover:ease-in  hover:-translate-y-0.5 transition duration-300 ;
+    }
+    .btn--focus{
+        @apply focus:shadow-soft-xl focus:bg-gradient-to-r from-custom-purple  to-custom-blue focus:transition-colors focus:whitespace-nowrap focus:font-semibold;
+    }
+    .btn__inner{
+        @apply bg-white focus:bg-gradient-to-r from-white to-gray-100  flex items-center  rounded-full text-center px-4 py-2 w-full ;
+    }
+    .btn__inner__icon {
+        @apply text-gray-600 group-focus:text-custom-purple fill-current;
+    }
+}
