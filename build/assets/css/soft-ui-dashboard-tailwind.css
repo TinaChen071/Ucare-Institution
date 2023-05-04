@@ -2196,7 +2196,7 @@ h6 {
 }
 
 .bg-main-pattern {
-  background-image: url('./build/assets/img/main_background.png');
+  background-image: url('/build/assets/img/main_background.png');
 }
 
 .bg-none {
@@ -2414,6 +2414,16 @@ h6 {
 
 .stroke-0 {
   stroke-width: 0;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-0 {
