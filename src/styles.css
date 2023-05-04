@@ -20,8 +20,8 @@
 @tailwind utilities;
 
 @layer components {
-    .nav__btn{
-        @apply text-sm font-semibold leading-6 text-gray-900;
+    .nav__btn--default{
+        @apply text-sm font-semibold leading-6 text-gray-800;
     }
     .nav__btn--hover{
         @apply hover:text-red-400 hover:font-semibold;
@@ -31,5 +31,8 @@
     }
     .menu__btn {
         @apply bg-white/65 py-4 px-5 rounded-t-lg border-white border-2 hover:bg-red-400;
+    }
+    .function__btn {
+        @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-red-400;
     }
 }

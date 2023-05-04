@@ -1394,7 +1394,7 @@ module.exports = {
         p: {
           "line-height": "1.625",
           "font-weight": "400",
-          "margin-bottom": "1rem",
+          // "margin-bottom": "1rem",
         },
 
         small: {

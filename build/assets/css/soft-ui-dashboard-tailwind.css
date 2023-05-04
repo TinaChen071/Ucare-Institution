@@ -593,7 +593,6 @@ label {
 p {
   line-height: 1.625;
   font-weight: 400;
-  margin-bottom: 1rem;
 }
 
 small {
@@ -655,12 +654,12 @@ h6 {
   line-height: 1.625;
 }
 
-.nav__btn {
+.nav__btn--default {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgb(20 23 39 / var(--tw-text-opacity));
+  color: rgb(37 47 64 / var(--tw-text-opacity));
 }
 
 .nav__btn--hover:hover {
@@ -691,6 +690,23 @@ h6 {
 .menu__btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.function__btn {
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+.function__btn:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .pointer-events-none {
@@ -1195,6 +1211,10 @@ h6 {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -1752,9 +1772,9 @@ h6 {
        column-gap: 3rem;
 }
 
-.gap-x-14 {
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
 }
 
 .gap-x-4 {
@@ -1872,6 +1892,11 @@ h6 {
 .rounded-b-2xl {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+}
+
+.rounded-b-full {
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
 }
 
 .rounded-b-inherit {
@@ -2392,6 +2417,11 @@ h6 {
   padding-right: 0.25rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -2829,11 +2859,6 @@ h6 {
   color: rgb(37 47 64 / var(--tw-text-opacity));
 }
 
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(20 23 39 / var(--tw-text-opacity));
-}
-
 .text-inherit {
   color: inherit;
 }
@@ -2866,6 +2891,11 @@ h6 {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(234 6 6 / var(--tw-text-opacity));
+}
+
+.text-rose-600 {
+  --tw-text-opacity: 1;
+  color: rgb(225 29 72 / var(--tw-text-opacity));
 }
 
 .text-sky-600 {
