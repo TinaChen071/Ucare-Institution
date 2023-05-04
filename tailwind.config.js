@@ -490,7 +490,7 @@ module.exports = {
 
       "gradient-horizontal-dark": "linear-gradient(90deg,transparent,rgba(0,0,0,.4),transparent)",
       "gradient-horizontal-light": "linear-gradient(90deg,transparent,rgba(0,0,0,.1),transparent)",
-      'main-pattern': "url('/build/assets/img/main_background.png')",
+      'main-pattern': "url('./build/assets/img/main_background.png')",
       
     }),
     backgroundOpacity: ({ theme }) => theme("opacity"),
