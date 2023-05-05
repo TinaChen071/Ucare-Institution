@@ -29,6 +29,9 @@
     .nav__btn--focus{
         @apply focus:text-red-400 focus:font-semibold;
     }
+    .nav__icon--hover{
+        @apply text-black hover:text-red-400 fill-current;
+    }
     .menu__btn {
         @apply bg-white/65 py-4 px-5 rounded-t-lg border-white border-2 hover:bg-red-400;
     }
@@ -36,3 +39,4 @@
         @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-red-400;
     }
 }
+
