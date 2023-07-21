@@ -46,6 +46,16 @@ function password(x) {
 }
 
 // 重整 BTN
-function refresh(y) {
+function refresh(x) {
   $("#refresh").addClass("rotate-360 transition duration-150 ease-in-out");
+}
+
+// 功能選單 BTN
+function function__dropdown() {
+  const x = document.getElementById("function__content");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
 }

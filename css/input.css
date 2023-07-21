@@ -146,21 +146,28 @@ html {
   .input__radio {
     @apply shrink-0 mt-0.5 border-gray-200 rounded-full text-custom__primary focus:ring-custom__primary;
   }
-  .img__frame__big {
-    @apply mx-auto rounded-3xl overflow-hidden border-2 border-custom__secondary w-full aspect-video object-cover;
+  .nav__btn {
+    @apply text-sm font-semibold leading-6 text-gray-800 hover:text-red-400 hover:font-semibold focus:text-red-400 focus:font-semibold;
   }
-  .features__card__p {
-    @apply text-base md:text-lg lg:text-2xl font-medium leading-loose;
+  .nav__subBtn {
+    @apply py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-red-200;
   }
-}
-@screen sm {
-  #checkIn__bg {
-    background-image: url(img/line.png);
-    background-size: 100%;
-    @apply bg-contain bg-no-repeat bg-center bg-opacity-20;
+  .nav__icon--hover {
+    @apply text-black hover:text-red-400 fill-current;
+  }
+  .menu__btn {
+    @apply bg-white/60 py-4 px-5 rounded-t-lg border-white border-2 hover:bg-red-400;
+  }
+  .function__btn {
+    @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-red-400;
   }
 }
 #bg {
   background-image: url(img/bg.png);
+  @apply bg-cover bg-no-repeat bg-center;
+}
+
+#main__bg {
+  background-image: url(img/main_background.png);
   @apply bg-cover bg-no-repeat bg-center;
 }/*# sourceMappingURL=input.css.map */
