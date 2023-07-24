@@ -29,6 +29,9 @@ module.exports = {
       },
       rotate: {
         '360': '360deg',
+      },
+      gridTemplateColumns: {
+        '13': 'repeat(13, minmax(0, 1fr))',
       }
     },
     fontFamily: {
