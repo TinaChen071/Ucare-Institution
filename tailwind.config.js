@@ -13,6 +13,7 @@ module.exports = {
         'custom__green--dark': '#9EC86A',
         'custom__green--light': '#EAF5E1',
         'custom__alert': '#D02424',
+        'custom__tabBtn': '#2E3A59',
       },
       brightness: {
         500: '5',

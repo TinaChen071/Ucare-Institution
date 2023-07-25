@@ -149,7 +149,7 @@
         @apply ml-auto hidden w-3 h-3 text-gray-600 group-hover:text-custom__primary
     }
     .menu__btn {
-        @apply bg-white/60 py-4 px-5 rounded-t-lg border-white border-2 hover:bg-red-400
+        @apply bg-white/60 py-4 px-5 rounded-t-lg border-white border-2 hover:bg-red-400 focus:bg-red-400
     }
     .function__text {
         @apply text-center text-custom__primary text-sm font-semibold leading-6 mx-auto
@@ -158,6 +158,16 @@
         @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-custom__primary w-fit;
     }
 
+    .tab__text {
+        @apply font-semibold hs-tab-active:text-custom__primary  px-1 inline-flex items-center gap-2   text-sm whitespace-nowrap text-gray-500 hover:text-custom__primary
+    }
+    .tab__BTN {
+        @apply font-semibold hs-tab-active:text-white hs-tab-active:bg-custom__tabBtn inline-flex items-center gap-2 text-sm whitespace-nowrap text-custom__tabBtn hover:text-custom__tabBtn hover:bg-gray-100 py-1 px-2 rounded-lg 
+    }
+
+    .modal__BTN {
+        @apply font-semibold hs-tab-active:text-white hs-tab-active:bg-custom__primary inline-flex items-center gap-2 text-sm whitespace-nowrap text-custom__primary hover:text-white hover:bg-custom__primary py-1 px-2 rounded-lg border-2 border-custom__primary transition
+    }
 
 
 }

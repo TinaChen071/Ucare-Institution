@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ucare</title>
+    <title>個案</title>
 
     <!-- Main css -->
     <link rel="stylesheet" href="../output.css">
@@ -219,9 +219,9 @@
         <!-- 按鈕 -->
         <div class="flex gap-x-4 justify-center">
           <!-- btn 1 -->
-          <a href="#" class="menu__btn group">
+          <a href="#" class="menu__btn group bg-red-400">
             <div class="w-8 h-8 text-center">
-              <img src="../img/Nav BTN-1.svg" alt="" class="group-hover:brightness-500 group-focus:brightness-500">
+              <img src="../img/Nav BTN-1.svg" alt="" class="group-hover:brightness-500 brightness-500">
             </div>
           </a>
           <!-- btn 2 -->
@@ -241,7 +241,7 @@
         <!-- 下排按鈕文字 -->
         <div class=" bg-white py-2 ">
           <div class="flex gap-x-16 justify-center">
-            <a href="" class="whitespace-nowrap nav__btn">個案</a>
+            <a href="" class="whitespace-nowrap nav__btn text-custom__primary">個案</a>
             <a href="" class="whitespace-nowrap nav__btn">照服</a>
             <a href="" class="whitespace-nowrap nav__btn">生理</a>
           </div>
@@ -513,445 +513,300 @@
       </nav>
 
       <!-- 主要內容區塊 -->
-      <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+      <div class="">
 
-        <!-- 統計區塊 -->
-        <div class="flex flex-col gap-8 lg:gap-16 bg-white p-6 rounded-lg ">
+        <!-- 功能切換 Tab -->
+        <div class="flex justify-between items-center mb-4">
 
-          <!-- 上區塊 -->
-          <div class="grid grid-cols-3 lg:grid-cols-1 gap-6 justify-between ">
+          <!-- 左 -->
+          <div class="">
 
-            <!-- 01 -->
-            <div class="divide-y divide-gray-400 ">
-              <p class="pb-2 text-gray-500 whitespace-nowrap">優惠/公告
-              </p>
-              <p class="py-2 text-red-400"><span class="text-4xl mr-1">0</span>則</p>
-            </div>
-            <!-- 02 -->
-            <div class="divide-y divide-gray-400 ">
-              <p class="pb-2 text-gray-500 whitespace-nowrap">住民總數
-              </p>
-              <p class="py-2 text-orange-400"><span class="text-4xl mr-1">154</span>人</p>
-            </div>
-            <!-- 03 -->
-            <div class="divide-y divide-gray-400 ">
-              <p class="pb-2 text-gray-500 whitespace-nowrap">在院人數
-              </p>
-              <p class="py-2 text-yellow-400"><span class="text-4xl mr-1">109</span>人</p>
-            </div>
-            <!-- 04 -->
-            <div class="divide-y divide-gray-400 ">
-              <p class="pb-2 text-gray-500 whitespace-nowrap">住院人數
-              </p>
-              <p class="py-2 text-blue-400"><span class="text-4xl mr-1">37</span>人</p>
-            </div>
-            <!-- 05 -->
-            <div class="divide-y divide-gray-400 ">
-              <p class="pb-2 text-gray-500 whitespace-nowrap">請假人數
-              </p>
-              <p class="py-2 text-green-400"><span class="text-4xl mr-1">8</span>人</p>
-            </div>
-            <!-- 06 -->
-            <div class="divide-y divide-gray-400 ">
-              <p class="pb-2 text-gray-500 whitespace-nowrap">當月退住
-              </p>
-              <p class="py-2 text-violet-400"><span class="text-4xl mr-1">0</span>人</p>
-            </div>
+            <nav class="flex space-x-6" aria-label="Tabs" role="tablist">
+              <!-- 01 -->
+              <button type="button" class="tab__text active" id="basic-tabs-item-1" data-hs-tab="#basic-tabs-1" aria-controls="basic-tabs-1" role="tab">
+                一般
+              </button>
 
+              <!-- 02 -->
+              <button type="button" class="tab__text" id="basic-tabs-item-2" data-hs-tab="#basic-tabs-2" aria-controls="basic-tabs-2" role="tab">
+                臨托
+              </button>
+
+              <!-- 03 -->
+              <button type="button" class="tab__text" id="basic-tabs-item-3" data-hs-tab="#basic-tabs-3" aria-controls="basic-tabs-3" role="tab">
+                喘息
+              </button>
+            </nav>
           </div>
+          
+          <!-- 右 -->
+          <div class="">
+            <nav class="flex space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
 
-          <!-- 下區塊 -->
-          <div class="flex flex-row lg:flex-col gap-4 justify-between text-gray-500">
+              <!-- 01 -->
+              <button type="button" class="tab__BTN active" id="basic-tabs-item-list" data-hs-tab="#basic-tabs-list" aria-controls="basic-tabs-list" role="tab">
+                <i class="fa-solid fa-list "></i>
+                列表模式
+              </button>
 
-            <!-- 性別比 -->
-            <div class="flex flex-col gap-2">
-              <!-- 男 -->
-              <div class="flex gap-2">
-                <img class="w-5 h-5" src="../img/man.svg" alt="">
-                
-                <p class="whitespace-nowrap">男 35 人
-                </p>
-              </div>
+              <!-- 02 -->
+              <button type="button" class="tab__BTN" id="basic-tabs-item-img" data-hs-tab="#basic-tabs-img" aria-controls="basic-tabs-img" role="tab">
+                <i class="fa-solid fa-table-cells"></i>
+                圖示模式
+              </button>
 
-              <!-- 女 -->
-              <div class="flex gap-2">
-                <img class="w-5 h-5" src="../img/woman.svg" alt="">
-                
-                <p class="whitespace-nowrap">女 69 人
-                </p>
-              </div>
-            </div>
-            <!-- 住院比 -->
-            <div class="flex flex-col gap-2">
-              <!-- 急性住院 -->
-              <div class="flex gap-2">
-                <img class="w-5 h-5" src="../img/ambulance.svg" alt="">
-                
-                <p class="whitespace-nowrap">急性住院 18 人
-                </p>
-              </div>
-
-              <!-- 請假住院 -->
-              <div class="flex gap-2">
-                <img class="w-5 h-5" src="../img/hospital.svg" alt="">
-                
-                <p class="whitespace-nowrap">請假住院 19 人
-                </p>
-              </div>
-            </div>
-            <!-- 請假比 -->
-            <div class="flex flex-col gap-2">
-              <!-- 請假返家 -->
-              <div class="flex gap-2">
-                <img class="w-5 h-5" src="../img/home.svg" alt="">
-                
-                <p class="whitespace-nowrap">請假返家 3 人
-                </p>
-              </div>
-              
-              <!-- 請假出國 -->
-              <div class="flex gap-2">
-                <img class="w-5 h-5" src="../img/airplane.svg" alt="">
-                
-                <p class="whitespace-nowrap">請假出國 1 人
-                </p>
-              </div>
-              <div class="flex gap-2">
-                <img class="w-5 h-5" src="../img/outdoor.svg" alt="">
-                
-                <p class="whitespace-nowrap">請假出門 4 人
-                </p>
-              </div>
-            </div>
-            
+            </nav>
           </div>
           
         </div>
 
-        <!-- 表格區塊 -->
-        <div class="lg:col-span-4">
-          <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+        <!-- 功能按鈕區塊 -->
+        <div class="flex gap-4 bg-white px-4 py-6">
 
-            <!-- 異常事件 -->
-            <div class="lg:col-span-3 rounded-lg overflow-hidden">
+          <!-- 新增住民 -->
+          <div>
+            <!-- BTN -->
+            <button type="button" class="modal__BTN group " data-hs-overlay="#hs-vertically-centered-modal">
+              <img src="../img/modal icon-2.svg" alt="" class="group-hover:brightness-500 ">
+              新增住民
+            </button>
 
-              <!-- 標題 -->
-              <div class="flex bg-custom__primary p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  <img src="../img/table icon-1.svg" alt="" class="pr-2">
-                  <p class="text-white font-medium">異常事件</p>
-                </div>
-  
-                <button class="bg-white py-2 px-4 rounded-lg text-sm  hover:text-custom__primary transition font-medium">
-                  報表匯出
-                </button>
-              </div>
+            <!--Modal -->
+            <div id="hs-vertically-centered-modal" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+              <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl ">
 
-              <!-- 表格 -->
-              <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
-
-                <table class="w-full divide-y divide-gray-300 text-custom__primary">
-                  
-                  <thead class="bg-custom__secondary">
-                    <tr>
-                      <th scope="col" class="whitespace-nowrap pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
-                        時間
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        住民
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        事件
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        處理狀況
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        描述
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
+                  <!-- 表頭 -->
+                  <div class="flex items-center p-4 border-b relative">
+                    <!-- 標題 -->
+                    <div class="flex gap-1 font-semibold text-custom__primary vertical__center">
+                      <img src="../img/modal icon-2.svg" alt=" ">
+                      <p>新增住民</p>
+                    </div>
+                    <!-- 關閉 BTN -->
+                    <button type="button" class="hs-dropdown-toggle inline-flex flex-shrink-0 ml-auto items-center rounded-md text-custom__primary/60 hover:text-custom__primary  hover:rotate-180 transition-all text-sm " data-hs-overlay="#hs-vertically-centered-modal">
                       
-                    </tr>
-                  </thead>
+                      <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                  </div>
 
-                  <tbody class="divide-y divide-gray-200 bg-white text-gray-800">
-                    <tr>
-                      <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  sm:pl-6"><time>2023/07/24</time></td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">000004 王靜</td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">下</td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">處理中</td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">測試描述內容</td>
+                  <!-- 內容 -->
+                  <div class="py-4 px-8 overflow-y-auto bg-gray-100 grid gap-2 text-gray-700">
+                    <!-- 姓名 -->
+                    <div class="grid grid-cols-4 items-center gap-4">
+                      <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap tracking-[3em]">姓名</label>
+                      <input type="text" class="col-span-2 py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary " placeholder="請輸入姓名">
+                      <div class="flex gap-4">
+                        <div class="flex">
+                          <input type="radio" name="hs-radio-group" class="input__radio " id="hs-radio-group-1" checked>
+                          <label for="hs-radio-group-1" class="text-sm text-gray-500 ml-2 ">男</label>
+                        </div>
                       
-                    </tr>
-      
-                    <!-- More people... -->
-                  </tbody>
-                </table>
+                        <div class="flex">
+                          <input type="radio" name="hs-radio-group" class="input__radio" id="hs-radio-group-2">
+                          <label for="hs-radio-group-2" class="text-sm text-gray-500 ml-2 ">女</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 身分證號碼 -->
+                    <div class="grid grid-cols-4 items-center gap-4">
+                      <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap">身分證號碼</label>
+                      <input type="text" class="col-span-3 py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary " placeholder="請輸入身分證號碼">
+                    </div>
+                    <!-- 生日 -->
+                    <div class="grid grid-cols-4 items-center gap-4">
+                      <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap tracking-[3em]">生日</label>
+                      <input type="date" class="text-gray-500 col-span-3 py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary " >
+                    </div>
+                    <!-- 類型 -->
+                    <div class="grid grid-cols-4 items-center gap-4">
+                      <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap tracking-[3em]">類型</label>
+                      <select class="text-gray-500 col-span-3 py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary ">
+                        <option selected>選取類型</option>
+                        <option>空</option>
+                        <option>瘡</option>
+                        <option>跌</option>
+                      </select>
+                    </div>
+                    <!-- 護字號 -->
+                    <div class="grid grid-cols-4 items-center gap-4">
+                      <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap tracking-[1em]">護字號</label>
+                      <div class="col-span-3 flex gap-2">
+                        <input type="text" class=" py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary " placeholder="請輸入護字號">
+                      <!-- BTN -->
+                      <button type="button" class="modal__BTN group  bg-white" data-hs-overlay="#hs-vertically-centered-modal">
+                        由系統產生護字號
+                      </button>
+                      </div>
+                    </div>
+                    <!-- 區域 / 床號 -->
+                    <div class="grid grid-cols-4 items-center gap-4">
+                      <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap tracking-[0.05em]">區域 / 床號</label>
+                      <div class="col-span-3 flex gap-2">
+                        <select class="text-gray-500  py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary ">
+                          <option selected>選取區域</option>
+                          <option>空</option>
+                          <option>瘡</option>
+                          <option>跌</option>
+                        </select>
+                        <select class="text-gray-500  py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary ">
+                          <option selected>選取床號</option>
+                          <option>空</option>
+                          <option>瘡</option>
+                          <option>跌</option>
+                        </select>
+                      </div>
+                    </div>
 
-              </div>
-              <!-- 控制 -->
-              <div class="flex bg-white p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  
-                  <p class="text-gray-900 text-sm">顯示 1 到 10 筆， 共 10 筆紀錄</p>
-                </div>
-  
-                <!-- 按鈕 -->
-                <div class="flex gap-x-4 items-center">
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-left"></i>
-                  </button>
-                  <button type="button" class="text-custom__primary">1</button>
-                  <button type="button" class="hover:text-custom__primary">2</button>
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- 極重要提醒 -->
-            <div class="lg:col-span-2 rounded-lg overflow-hidden">
+                  </div>
 
-              <!-- 標題 -->
-              <div class="flex bg-custom__orange--dark p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  <img src="../img/table icon-4.svg" alt="" class="pr-2">
-                  
-                  <p class="text-white font-medium">極重要提醒</p>
-                </div>
-  
-                <button class="bg-white py-2 px-4 rounded-lg text-sm  hover:text-custom__primary transition font-medium">
-                  報表匯出
-                </button>
-              </div>
-              <!-- 表格 -->
-              <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
-                <table class="w-full divide-y divide-gray-300 text-custom__orange--dark">
-                  
-                  <thead class="bg-custom__orange--light">
-                    <tr>
-                      <th colspan="3" scope="col" class="whitespace-nowrap  pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
-                        <time class="pr-1">2023/07/24（一）</time>
-                        <i class="fa-regular fa-calendar-days "></i>
-                      </th> 
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-gray-200 bg-white text-gray-800">
-                    <tr>
-                      <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-custom__orange--dark sm:pl-6">
-                        <i class="fa-solid fa-circle"></i>
-                      </td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">
-                        <time>14:20</time>
-                      </td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">TESTTESTTESTTESTTETTESTTESSTTE</td>
-                      
-                    </tr>
-      
-                    <!-- More people... -->
-                  </tbody>
-                </table>
-              </div>
-              <!-- 控制 -->
-              <div class="flex bg-white p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  
-                  <p class="text-gray-900 text-sm">顯示 1 到 10 筆， 共 10 筆紀錄</p>
-                </div>
-  
-                <!-- 按鈕 -->
-                <div class="flex gap-x-4 items-center">
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-left"></i>
-                  </button>
-                  <button type="button" class="text-custom__primary">1</button>
-                  <button type="button" class="hover:text-custom__primary">2</button>
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- 公告 -->
-            <div class="lg:col-span-3 rounded-lg overflow-hidden">
+                  <!-- 按鈕 -->
+                  <div class="flex justify-center items-center gap-x-2 py-3 px-4 border-t dark:border-gray-700">
+                    <button type="button" class="hs-dropdown-toggle py-2 px-6 inline-flex justify-center items-center gap-2 rounded-md  font-medium bg-white text-custom__primary border-2 border-custom__secondary shadow-sm align-middle hover:bg-custom__primary/20   transition-all text-sm " data-hs-overlay="#hs-vertically-centered-modal">
+                      取消
+                    </button>
 
-              <!-- 標題 -->
-              <div class="flex bg-custom__blue--dark p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  <img src="../img/table icon-2.svg" alt="" class="pr-2">
-                  
-                  <p class="text-white font-medium">公告</p>
-                </div>
-  
-                <button class="bg-white py-2 px-4 rounded-lg text-sm  hover:text-custom__primary transition font-medium">
-                  報表匯出
-                </button>
-              </div>
-              <!-- 表格 -->
-              <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
-                <table class="w-full divide-y divide-gray-300 text-custom__blue--dark">
-                  
-                  <thead class="bg-custom__blue--light">
-                    <tr>
-                      <th scope="col" class="whitespace-nowrap pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
-                        日期
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        標題
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        發布人員
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-gray-200 bg-white text-gray-800">
-                    <tr>
-                      <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  sm:pl-6"><time>2023/07/24</time></td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">000004 王靜</td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">測試事件內容</td>
-                      
-                    </tr>
-      
-                    <!-- More people... -->
-                  </tbody>
-                </table>
-              </div>
-              <!-- 控制 -->
-              <div class="flex bg-white p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  
-                  <p class="text-gray-900 text-sm">顯示 1 到 10 筆， 共 10 筆紀錄</p>
-                </div>
-  
-                <!-- 按鈕 -->
-                <div class="flex gap-x-4 items-center">
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-left"></i>
-                  </button>
-                  <button type="button" class="text-custom__primary">1</button>
-                  <button type="button" class="hover:text-custom__primary">2</button>
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- 逾時表單 -->
-            <div class="lg:col-span-2 rounded-lg overflow-hidden">
-
-              <!-- 標題 -->
-              <div class="flex bg-custom__green--dark p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  <img src="../img/table icon-3.svg" alt="" class="pr-2">
-                  
-                  <p class="text-white font-medium">逾時表單</p>
-                </div>
-  
-                <button class="bg-white py-2 px-4 rounded-lg text-sm  hover:text-custom__primary transition font-medium">
-                  報表匯出
-                </button>
-              </div>
-              <!-- 表格 -->
-              <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
-                <table class="w-full divide-y divide-gray-300 text-lime-600">
-                  
-                  <thead class="bg-custom__green--light">
-                    <tr>
-                      <th scope="col" class="whitespace-nowrap pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
-                        住民
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        類型
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        表單
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        日期
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
-                        天
-                        <button>
-                          <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
-                        <button>
-                      </th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-gray-200 bg-white text-gray-800">
-                    <tr>
-                      <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  sm:pl-6">000001 吳芳宜</td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">醫護</td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm ">護理計畫</td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm "><time>2023/07/24</time></td>
-                      <td class="whitespace-nowrap px-3 py-4 text-sm "><time>90</time>天</td>
-                      
-                    </tr>
-      
-                    <!-- More people... -->
-                  </tbody>
-                </table>
-              </div>
-              <!-- 控制 -->
-              <div class="flex bg-white p-3  items-center justify-between">
-                <div class="flex my-auto ">
-                  
-                  <p class="text-gray-900 text-sm">顯示 1 到 10 筆， 共 10 筆紀錄</p>
-                </div>
-  
-                <!-- 按鈕 -->
-                <div class="flex gap-x-4 items-center">
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-left"></i>
-                  </button>
-                  <button type="button" class="text-custom__primary">1</button>
-                  <button type="button" class="hover:text-custom__primary">2</button>
-                  <button type="button">
-                    <i class="text-custom__primary fa-solid fa-chevron-right"></i>
-                  </button>
+                    <a class="hs-dropdown-toggle py-2 px-6 inline-flex justify-center items-center gap-2 rounded-md  font-medium bg-custom__primary/90 text-white border-2 border-custom__secondary shadow-sm align-middle hover:bg-custom__primary  transition-all text-sm" href="#">
+                      新增
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- 床位管理 -->
+          <div>
+            <!-- BTN -->
+            <button type="button" class="modal__BTN group " data-hs-overlay="#hs-vertically-centered-modal">
+              <img src="../img/modal icon-1.svg" alt="" class="group-hover:brightness-500 ">
+              床位管理
+            </button>
+          </div>
+
+          <!-- 預約入住 -->
+          <div>
+            <!-- BTN -->
+            <button type="button" class="modal__BTN group " data-hs-overlay="#hs-vertically-centered-modal">
+              <img src="../img/modal icon-3.svg" alt="" class="group-hover:brightness-500 ">
+              預約入住
+            </button>
+          </div>
+          
+        </div>
+
+        <!-- Tab 內容區塊 -->
+        <div class="">
+
+          <!-- 列表 -->
+          <div id="basic-tabs-list" role="tabpanel" aria-labelledby="basic-tabs-item-list">
+
+            <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
+
+              <table class="w-full divide-y divide-gray-300 text-custom__primary">
+                
+                <thead class="bg-custom__secondary">
+                  <tr>
+                    <th scope="col" class="whitespace-nowrap pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
+                      功能
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      區
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      床號
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      姓名
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      護字號
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      年齡
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      入住日期
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      床位作業
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      物品作業
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    <th scope="col" class="px-3 py-2 whitespace-nowrap text-left text-sm font-semibold  ">
+                      備註
+                      <button>
+                        <i onclick="sort(this)" class="fa-solid fa-sort-down"></i>
+                      <button>
+                    </th>
+                    
+                  </tr>
+                </thead>
+
+                <tbody class="divide-y divide-gray-200 bg-white text-gray-800">
+                  <tr>
+                    <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  sm:pl-6">
+                      <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition">
+                        <img src="../img/control.svg" alt="" class="group-hover:brightness-500">
+                      </button>
+                    </td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">103</td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">2</td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">test</td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">000205</td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">63y9m</td>
+                    <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  sm:pl-6"><time>2023/07/24</time></td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">test</td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">test</td>
+                    <td class="whitespace-nowrap px-3 py-4 text-sm ">預約</td>
+                    
+                  </tr>
+    
+                  <!-- More people... -->
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+          <!-- 圖示 -->
+          <div id="basic-tabs-img" class="hidden" role="tabpanel" aria-labelledby="basic-tabs-item-img">
+            <p class="text-gray-500 dark:text-gray-400">
+              This is the <em class="font-semibold text-gray-800 dark:text-gray-200">second</em> item's tab body.
+            </p>
+          </div>
+          
         </div>
 
       </div>
+
     </div>
 
   </section>
@@ -1010,6 +865,9 @@
     
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>
+
+  <!-- Datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/datepicker.min.js"></script>
 
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
