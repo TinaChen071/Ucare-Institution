@@ -29,13 +29,16 @@
           <img src="../img/logo.png" alt="">
         </a>
         <div class="md:hidden">
-          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-custom__primary transition-all text-sm " data-hs-overlay="#hs-overlay-example">
-            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
+          <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-custom__primary transition-all text-sm " data-hs-overlay="#hs-overlay-example"
+          data-hs-collapse="#navbar-collapse-basic" >
+            <div class="hs-collapse-open:hidden">
+              <i class="fa-solid fa-bars px-1"></i>
+            </div>
+            
+            <div class="hs-collapse-open:block hidden">
+              <i class="fa-solid fa-xmark px-1"></i>
+            </div>
+
           </button>
         </div>
       </div>
@@ -54,7 +57,7 @@
           <!-- Menu -->
           <ul class="space-y-1.5">
             <li>
-              <a class="flex items-center gap-x-3.5 py-2 px-2.5 bg-red-100  text-custom__primary rounded-md  " href="javascript:;">
+              <a class="mobile__nav bg-red-100   " href="javascript:;">
                 <i class="fa-solid fa-house"></i>
                 首頁
               </a>
@@ -78,12 +81,12 @@
               <div id="bu-account-accordion" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
                 <ul class="pt-2 pl-2">
                   <li>
-                    <a class="flex items-center gap-x-3.5 py-2 px-2.5  text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+                    <a class="mobile__nav" href="javascript:;">
                       機構 1
                     </a>
                   </li>
                   <li>
-                    <a class="flex items-center gap-x-3.5 py-2 px-2.5  text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+                    <a class="mobile__nav" href="javascript:;">
                       機構 2
                     </a>
                   </li>
@@ -92,32 +95,32 @@
               </div>
             </li>
       
-            <li><a class="flex items-center gap-x-3.5 py-2 px-2.5  text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+            <li><a class="mobile__nav" href="javascript:;">
               <i class="fa-solid fa-hospital-user"></i>
               居護
             </a></li>
             
-            <li><a class="flex items-center gap-x-3.5 py-2 px-2.5  text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+            <li><a class="mobile__nav" href="javascript:;">
               <i class="fa-solid fa-hand-holding-heart"></i>
               新日照
             </a></li>
 
-            <li><a class="flex items-center gap-x-3.5 py-2 px-2.5  text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+            <li><a class="mobile__nav" href="javascript:;">
               <i class="fa-solid fa-house-medical"></i>
               居服
             </a></li>
           </ul>
           <!-- 設定 -->
           <ul class="space-y-1.5  justify-end">
-            <li><a class="flex items-center gap-x-3.5 py-2 px-2.5  text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+            <li><a class="mobile__nav" href="javascript:;">
               <i class="fa-regular fa-calendar-days"></i>
               日曆
             </a></li>
-            <li><a class="flex items-center gap-x-3.5 py-2 px-2.5  text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+            <li><a class="mobile__nav" href="javascript:;">
               <i class="fa-solid fa-gear"></i>
               設定
             </a></li>
-            <li><a class="flex items-center gap-x-3.5 py-2 px-2.5 text-slate-700 rounded-md hover:bg-red-100 hover:text-custom__primary" href="javascript:;">
+            <li><a class="mobile__nav" href="javascript:;">
               <i class="fa-solid fa-power-off"></i>
               登入/出
             </a></li>
@@ -130,8 +133,9 @@
 
     <!-- 桌機版 Navigation Start -->
     <div class="hidden md:block px-8">
-      <div class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
-        <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+      <div class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4">
+
+        <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between items-center" aria-label="Global">
 
           <!-- 左側按鈕 -->
           <div id="navbar-collapse-basic" class="hidden  sm:block">
@@ -140,9 +144,7 @@
               <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
                 <button id="hs-mega-menu-basic-dr" type="button" class="flex items-center w-full nav__btn group">
                   機構
-                  <svg class="ml-2 w-2.5 h-2.5 nav__btn group-hover:text-red-400" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-                  </svg>
+                  <i class="ml-2 nav__btn group-hover:text-custom__primary fa-solid fa-chevron-down"></i>
                 </button>
       
                 <!-- 下拉選單 -->
@@ -171,13 +173,13 @@
   
           <!-- 右側按鈕 -->
           <div class="hidden md:flex gap-x-8">
-            <a href="#" class="nav__icon--hover">
+            <a href="#" class="nav__icon">
               <i class="text-lg fa-regular fa-calendar-days"></i>
             </a>
-            <a href="#" class="nav__icon--hover">
+            <a href="#" class="nav__icon">
               <i class="text-lg fa-solid fa-gear"></i>
             </a>
-            <a href="#" class="nav__icon--hover">
+            <a href="#" class="nav__icon">
               <i class="text-lg fa-solid fa-power-off"></i>
             </a>
   
@@ -186,6 +188,7 @@
       </div>
     </div>
     <!-- 桌機版 Navigation End -->
+
   </section>
   <!-- Navigation 區塊 End -->
 
@@ -255,9 +258,11 @@
       
     <!-- 功能內容 -->
     <div id="hs-overlay-body-scrolling" class="hs-overlay hs-overlay-open:translate-y-0 hidden  -translate-y-full transition-all  duration-200 transform h-full  w-full z-[60] bg-red-100 border-r  [--body-scroll:true] [--overlay-backdrop:false]" tabindex="-1">
-      <div  class="grid grid-cols-5 md:grid-cols-7 lg:grid-cols-13 gap-4 mx-auto  max-w-7xl items-center justify-center p-6 lg:px-8 gap-x-4">
+
+      <div  class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-13 gap-4 mx-auto  max-w-7xl items-center justify-center p-6 lg:px-8 gap-x-4">
+        
         <!-- btn 1 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center ">
               <img src="../img/function icon-1.svg" alt="">
@@ -266,30 +271,28 @@
           紀錄查詢
         </a>
         <!-- btn 2 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
-            <div class=" text-center">
+            <div class="text-center">
               <img src="../img/function icon-2.svg" alt="">
             </div>
           </div>
           住民名冊
         </a>
         <!-- btn 3 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-3.svg" alt="">
             </div>
           </div>
-          <div class="flex flex-nowrap justify-center">
-            總表類
-          <svg class="h-5 w-5 flex-none text-rose-600 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-          </svg>
+          <div class="flex flex-nowrap justify-center items-center gap-1">
+            <p class="whitespace-nowrap">總表類</p>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
         </a>
         <!-- btn 4 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-4.svg" alt="">
@@ -298,7 +301,7 @@
           批次列印
         </a>
         <!-- btn 5 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-5.svg" alt="">                   
@@ -307,7 +310,7 @@
           護理交班
         </a>
         <!-- btn 6 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-6.svg" alt="">            
@@ -316,7 +319,7 @@
           會議記錄
         </a>
         <!-- btn 7 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-7.svg" alt="">            
@@ -325,7 +328,7 @@
           疼痛追蹤
         </a>
         <!-- btn 8 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-8.svg" alt="">             
@@ -334,7 +337,7 @@
           跌倒篩選
         </a>
         <!-- btn 9 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-9.svg" alt="">
@@ -343,7 +346,7 @@
           提醒列表
         </a>
         <!-- btn 10 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-10.svg" alt="">
@@ -352,7 +355,7 @@
           特殊事項
         </a>
         <!-- btn 11 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-11.svg" alt="">
@@ -361,7 +364,7 @@
           表單警示
         </a>
         <!-- btn 12 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="relative function__btn mb-2 rounded-full">
             <div class=" text-center">
               <img src="../img/function icon-12.svg" alt="">
@@ -369,37 +372,34 @@
             <!-- 標記 -->
             <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-1 -right-1 dark:border-gray-900">8</div>
           </div>
-          <div class="flex flex-nowrap justify-center">
-            照會單
-          <svg class="h-5 w-5 flex-none text-rose-600 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-          </svg>
+          <div class="flex flex-nowrap justify-center items-center gap-1">
+            <p class="whitespace-nowrap">照會單</p>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
         </a>
         <!-- btn 13 -->
-        <a href="#" class="text-center text-custom__primary text-sm font-semibold leading-6 mx-auto">
+        <a href="#" class="function__text">
           <div class="relative function__btn mb-2 rounded-full">
             <div class=" text-center">
-              <img src="../img/function icon-13.svg" alt="">             
+              <img src="../img/function icon-13.svg" alt="">
             </div>
             <!-- 標記 -->
             <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-1 -right-1 dark:border-gray-900">8</div>
           </div>
-          <div class="flex flex-nowrap justify-center">
-          <p class="whitespace-nowrap">特殊事件</p>
-          <svg class="h-5 w-5 flex-none text-rose-600 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-          </svg>
+          <div class="flex flex-nowrap justify-center items-center gap-1">
+            <p class="whitespace-nowrap">特殊事件</p>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
         </a>
 
       </div>
     </div>
+
     <!-- 功能按鈕 -->
     <div data-hs-overlay="#hs-overlay-body-scrolling">
-      <div class="h-2 bg-red-400"></div>
+      <div class="h-2 bg-custom__primary"></div>
         
-      <button class="bg-red-400 rounded-b-full text-white absolute right-0 flex items-center px-12 py-2  gap-2 text-sm font-semibold group"  >
+      <button class="bg-custom__primary rounded-b-full text-white absolute right-0 flex items-center px-12 py-2  gap-2 text-sm font-medium group"  >
         <p>功能選單</p>
         <i class="fa-solid fa-chevron-down group-hover:rotate-180 transition"></i>
       </button>
@@ -411,12 +411,9 @@
   <section>
     <!-- 側拉按鈕 -->
     <button  class="hidden md:block absolute mt-4 text-custom__primary" data-hs-overlay="#hs-overlay-body-1">
-      <div class=" inline-flex items-center py-4 px-2 text-sm font-semibold text-center bg-white hover:bg-red-100 transition border rounded-r-lg drop-shadow-md" type="button" style="writing-mode: vertical-rl;" >
-        <a href="javascript:;" class="inline-flex items-center" >
-          <svg class="w-3 h-3 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-          
+      <div class="inline-flex items-center py-4 px-2 text-sm font-medium text-center bg-white hover:bg-red-100 transition border rounded-r-lg drop-shadow-md" type="button" style="writing-mode: vertical-rl;" >
+        <a href="javascript:;" class="inline-flex gap-2 items-center" >
+          <i class="fa-solid fa-chevron-right"></i>
           選擇機構 
         </a>
         
@@ -424,10 +421,11 @@
     </button>
 
     <!-- 側邊選單 -->
-    <aside id="hs-overlay-body-1" class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full absolute  left-0  transform h-full max-w-xs   z-[60] bg-red-200 items-center justify-between overflow-y-auto  border-0  p-0 antialiased shadow-none transition-transform duration-200 drop-shadow-md  [--overlay-backdrop:false] [--body-scroll:true]" tabindex="-1">
+    <aside id="hs-overlay-body-1" class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full absolute  left-0  transform h-full max-w-xs z-[60] bg-red-200 items-center justify-between overflow-y-auto  border-0  p-0 antialiased shadow-none transition-transform duration-200 drop-shadow-md  [--overlay-backdrop:false] [--body-scroll:true] rounded-br-xl" tabindex="-1">
+      <!-- 標題 -->
       <div class="py-1 flex items-center justify-center border border-b-white text-custom__primary">
         <i class="absolute top-0 right-0  p-4  cursor-pointer fas fa-times  hover:rotate-180 transition" data-hs-overlay="#hs-overlay-body-1"></i>
-        <a class="flex items-center py-2 m-0 text-sm  whitespace-nowrap  font-semibold" href="javascript:;" target="_blank">
+        <a class="flex items-center py-2 m-0 text-sm  whitespace-nowrap font-medium" href="javascript:;" >
           快速跳轉
         </a>
       </div>
@@ -443,20 +441,23 @@
                   <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
                 </svg>
               </div>
-              <input id="search" name="search" class="block w-full rounded-md border-0 bg-white py-2 pl-10 pr-3 text-gray-300 placeholder:text-gray-400 focus:bg-white focus:text-gray-900 focus:ring-2 focus:ring-custom__primary text-xs sm:leading-6" placeholder="搜尋" type="search">
+              <input id="search" name="search" class="input__input" placeholder="搜尋" type="search">
             </div>
           </div>
         </div>
         
         <!-- 住民下拉選單 -->
         <div>
-          <p class="mb-1 text-sm text-gray-900 font-medium">住民</p>
+          <p class="mb-1 text-sm text-gray-700 font-medium">住民</p>
           <div class="hs-dropdown relative inline-flex w-full">
-            <button id="hs-dropdown-default" type="button" class="hs-dropdown-toggle w-full justify-between text-gray-400  bg-white focus:ring-2 focus:ring-custom__primary font-medium rounded-lg text-xs px-4 py-3.5 text-center inline-flex items-center " type="button">選擇住民 <svg class="w-4 h-4 ml-2 justify-end" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <button id="hs-dropdown-default" type="button" class="hs-dropdown-toggle w-full justify-between text-gray-400  bg-white focus:ring-2 focus:ring-custom__primary font-medium rounded-lg text-xs px-4 py-3.5 text-center inline-flex items-center group" type="button">
+              選擇住民 
+              <i class="group-focus:text-custom__primary fa-solid fa-chevron-down"></i>
             </button>
 
             <!-- 下拉選單 -->
             <div aria-labelledby="hs-dropdown-default" class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] hs-dropdown-open:opacity-100 opacity-0  hidden z-10 mt-2 w-5/6 bg-white shadow-md rounded-lg p-2">
+
               <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                 <li>
                   <a href="#" class="flex items-center gap-x-3.5 nav__subBtn">103-2 林繁（99999）</a>
@@ -488,32 +489,38 @@
     <div class="section">
       <!-- Breadcrumbs -->
       <nav class="flex mb-6 " aria-label="Breadcrumb">
+
         <ol role="list" class="flex items-center  space-x-6">
+
           <li>
             <div>
-              <a href="#" class="text-gray-800 hover:text-custom__primary">
+              <a href="#" class="breadcrumb--default">
                 <i class="fa-solid fa-house"></i>
                 <span class="sr-only">Home</span>
               </a>
             </div>
           </li>
+
           <li>
             <i class="fa-solid fa-chevron-right text-gray-800 text-sm"></i>
           </li>
+
           <li>
-            <a href="#" class="text-base font-medium text-custom__primary ">個案</a>
+            <a href="#" class="breadcrumb--active ">個案</a>
           </li>
           
         </ol>
       </nav>
 
-      <!-- 內容區塊 -->
+      <!-- 主要內容區塊 -->
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
 
-        <!-- 統計 -->
+        <!-- 統計區塊 -->
         <div class="flex flex-col gap-8 lg:gap-16 bg-white p-6 rounded-lg ">
+
           <!-- 上區塊 -->
           <div class="grid grid-cols-3 lg:grid-cols-1 gap-6 justify-between ">
+
             <!-- 01 -->
             <div class="divide-y divide-gray-400 ">
               <p class="pb-2 text-gray-500 whitespace-nowrap">優惠/公告
@@ -550,18 +557,23 @@
               </p>
               <p class="py-2 text-violet-400"><span class="text-4xl mr-1">0</span>人</p>
             </div>
+
           </div>
 
           <!-- 下區塊 -->
           <div class="flex flex-row lg:flex-col gap-4 justify-between text-gray-500">
+
             <!-- 性別比 -->
             <div class="flex flex-col gap-2">
+              <!-- 男 -->
               <div class="flex gap-2">
                 <img class="w-5 h-5" src="../img/man.svg" alt="">
                 
                 <p class="whitespace-nowrap">男 35 人
                 </p>
               </div>
+
+              <!-- 女 -->
               <div class="flex gap-2">
                 <img class="w-5 h-5" src="../img/woman.svg" alt="">
                 
@@ -571,12 +583,15 @@
             </div>
             <!-- 住院比 -->
             <div class="flex flex-col gap-2">
+              <!-- 急性住院 -->
               <div class="flex gap-2">
                 <img class="w-5 h-5" src="../img/ambulance.svg" alt="">
                 
                 <p class="whitespace-nowrap">急性住院 18 人
                 </p>
               </div>
+
+              <!-- 請假住院 -->
               <div class="flex gap-2">
                 <img class="w-5 h-5" src="../img/hospital.svg" alt="">
                 
@@ -586,12 +601,15 @@
             </div>
             <!-- 請假比 -->
             <div class="flex flex-col gap-2">
+              <!-- 請假返家 -->
               <div class="flex gap-2">
                 <img class="w-5 h-5" src="../img/home.svg" alt="">
                 
                 <p class="whitespace-nowrap">請假返家 3 人
                 </p>
               </div>
+              
+              <!-- 請假出國 -->
               <div class="flex gap-2">
                 <img class="w-5 h-5" src="../img/airplane.svg" alt="">
                 
@@ -610,12 +628,15 @@
           
         </div>
 
-        <!-- 表格 -->
+        <!-- 表格區塊 -->
         <div class="lg:col-span-4">
           <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+
             <!-- 異常事件 -->
             <div class="lg:col-span-3 rounded-lg overflow-hidden">
-              <div class="flex bg-red-400 p-3  items-center justify-between">
+
+              <!-- 標題 -->
+              <div class="flex bg-custom__primary p-3  items-center justify-between">
                 <div class="flex my-auto ">
                   <img src="../img/table icon-1.svg" alt="" class="pr-2">
                   <p class="text-white font-medium">異常事件</p>
@@ -625,11 +646,13 @@
                   報表匯出
                 </button>
               </div>
+
               <!-- 表格 -->
               <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
+
                 <table class="w-full divide-y divide-gray-300 text-custom__primary">
                   
-                  <thead class="bg-red-50">
+                  <thead class="bg-custom__secondary">
                     <tr>
                       <th scope="col" class="whitespace-nowrap pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
                         時間
@@ -664,6 +687,7 @@
                       
                     </tr>
                   </thead>
+
                   <tbody class="divide-y divide-gray-200 bg-white text-gray-800">
                     <tr>
                       <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm  sm:pl-6"><time>2023/07/24</time></td>
@@ -677,6 +701,7 @@
                     <!-- More people... -->
                   </tbody>
                 </table>
+
               </div>
               <!-- 控制 -->
               <div class="flex bg-white p-3  items-center justify-between">
@@ -700,7 +725,9 @@
             </div>
             <!-- 極重要提醒 -->
             <div class="lg:col-span-2 rounded-lg overflow-hidden">
-              <div class="flex bg-orange-400 p-3  items-center justify-between">
+
+              <!-- 標題 -->
+              <div class="flex bg-custom__orange--dark p-3  items-center justify-between">
                 <div class="flex my-auto ">
                   <img src="../img/table icon-4.svg" alt="" class="pr-2">
                   
@@ -715,7 +742,7 @@
               <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
                 <table class="w-full divide-y divide-gray-300 text-custom__orange--dark">
                   
-                  <thead class="bg-orange-50">
+                  <thead class="bg-custom__orange--light">
                     <tr>
                       <th colspan="3" scope="col" class="whitespace-nowrap  pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
                         <time class="pr-1">2023/07/24（一）</time>
@@ -761,7 +788,9 @@
             </div>
             <!-- 公告 -->
             <div class="lg:col-span-3 rounded-lg overflow-hidden">
-              <div class="flex bg-blue-400 p-3  items-center justify-between">
+
+              <!-- 標題 -->
+              <div class="flex bg-custom__blue--dark p-3  items-center justify-between">
                 <div class="flex my-auto ">
                   <img src="../img/table icon-2.svg" alt="" class="pr-2">
                   
@@ -774,9 +803,9 @@
               </div>
               <!-- 表格 -->
               <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
-                <table class="w-full divide-y divide-gray-300 text-blue-400">
+                <table class="w-full divide-y divide-gray-300 text-custom__blue--dark">
                   
-                  <thead class="bg-blue-50">
+                  <thead class="bg-custom__blue--light">
                     <tr>
                       <th scope="col" class="whitespace-nowrap pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
                         日期
@@ -833,7 +862,9 @@
             </div>
             <!-- 逾時表單 -->
             <div class="lg:col-span-2 rounded-lg overflow-hidden">
-              <div class="flex bg-lime-500 p-3  items-center justify-between">
+
+              <!-- 標題 -->
+              <div class="flex bg-custom__green--dark p-3  items-center justify-between">
                 <div class="flex my-auto ">
                   <img src="../img/table icon-3.svg" alt="" class="pr-2">
                   
@@ -846,9 +877,9 @@
               </div>
               <!-- 表格 -->
               <div class="bg-white overflow-hidden overflow-x-auto border-b-gray-300 border">
-                <table class="w-full divide-y divide-gray-300 text-lime-500">
+                <table class="w-full divide-y divide-gray-300 text-lime-600">
                   
-                  <thead class="bg-lime-50">
+                  <thead class="bg-custom__green--light">
                     <tr>
                       <th scope="col" class="whitespace-nowrap pl-4 pr-3 py-2 text-left text-sm font-semibold  sm:pl-6">
                         住民
@@ -965,6 +996,8 @@
   <!-- Footer 區塊 End -->
       
 
+
+  
   <!-- jQuery main -->
   <script src="../js/jquery-3.6.3.min.js"></script>
   <script src="../js/all.js"></script>

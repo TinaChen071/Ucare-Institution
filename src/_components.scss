@@ -74,10 +74,10 @@
         @apply text-custom__primary hover:text-gray-900 whitespace-nowrap
     }
     .breadcrumb--default {
-        @apply text-sm text-gray-400 hover:text-custom__primary hover:font-medium
+        @apply text-gray-800 hover:text-custom__primary
     }
     .breadcrumb--active {
-        @apply text-sm font-medium text-custom__primary
+        @apply text-base font-medium text-custom__primary
     }
 
     .pagination--default {
@@ -125,7 +125,7 @@
         @apply block text-sm font-medium text-gray-700;
     }
     .input__input {
-        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-custom__primary focus:ring-custom__primary sm:text-sm;
+        @apply block w-full rounded-md border-0 bg-white py-2 pl-10 pr-3 text-gray-300 placeholder:text-gray-400 focus:bg-white focus:text-gray-900 focus:ring-2 focus:ring-custom__primary text-xs sm:leading-6;
     }
     .input__radio {
         @apply shrink-0 mt-0.5 border-gray-200 rounded-full text-custom__primary focus:ring-custom__primary
@@ -138,7 +138,7 @@
         @apply  py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-red-200
     }
 
-    .nav__icon--hover{
+    .nav__icon{
         @apply text-black hover:text-custom__primary fill-current;
     }
 
@@ -151,9 +151,14 @@
     .menu__btn {
         @apply bg-white/60 py-4 px-5 rounded-t-lg border-white border-2 hover:bg-red-400
     }
+    .function__text {
+        @apply text-center text-custom__primary text-sm font-semibold leading-6 mx-auto
+    }
     .function__btn {
         @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-custom__primary w-fit;
     }
+
+
 
 }
 
