@@ -5,10 +5,17 @@ module.exports = {
     extend: {
       colors: {
         'custom__primary': '#D9667B',
-        'custom__secondary': '#709AB2',
-        'custom__third': '#F0F5E1',
-        'custom__forth': '#D9ECB1',
+        'custom__secondary': '#FBEBED',
+        'custom__orange--dark': '#E16736',
+        'custom__orange--light': '#F9E0D3',
+        'custom__blue--dark': '#4B7FE4',
+        'custom__blue--light': '#DBE7F7',
+        'custom__green--dark': '#9EC86A',
+        'custom__green--light': '#EAF5E1',
         'custom__alert': '#D02424',
+      },
+      brightness: {
+        500: '5',
       },
       spacing: {
         '128': '32rem',
@@ -16,6 +23,8 @@ module.exports = {
         '4/5': '80%',
         '5/6': '83%',
         '6/5': '120%',
+        '1/10': '10%',
+        '1/20': '5%',
         '16.5': "4.05rem",
       },
       minHeight: {

@@ -147,19 +147,19 @@ html {
     @apply shrink-0 mt-0.5 border-gray-200 rounded-full text-custom__primary focus:ring-custom__primary;
   }
   .nav__btn {
-    @apply text-sm font-semibold leading-6 text-gray-800 hover:text-red-400 hover:font-semibold focus:text-red-400 focus:font-semibold;
+    @apply text-sm font-semibold leading-6 text-gray-800 hover:text-custom__primary hover:font-semibold focus:text-custom__primary focus:font-semibold;
   }
   .nav__subBtn {
     @apply py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-red-200;
   }
   .nav__icon--hover {
-    @apply text-black hover:text-red-400 fill-current;
+    @apply text-black hover:text-custom__primary fill-current;
   }
   .menu__btn {
     @apply bg-white/60 py-4 px-5 rounded-t-lg border-white border-2 hover:bg-red-400;
   }
   .function__btn {
-    @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-red-400 w-fit;
+    @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-custom__primary w-fit;
   }
 }
 #bg {

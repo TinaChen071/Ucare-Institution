@@ -59,3 +59,8 @@ function function__dropdown() {
       x.style.display = "none";
     }
 }
+
+// 表單排序 BTN
+function sort(x) {
+  x.classList.toggle("fa-sort-up");
+}
