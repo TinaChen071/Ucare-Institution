@@ -177,7 +177,7 @@ html {
     @apply font-semibold hs-tab-active:text-white hs-tab-active:bg-custom__tabBtn inline-flex items-center gap-2 text-sm whitespace-nowrap text-custom__tabBtn hover:text-custom__tabBtn hover:bg-gray-100 py-1 px-2 rounded-lg;
   }
   .modal__BTN {
-    @apply font-semibold hs-tab-active:text-white hs-tab-active:bg-custom__primary inline-flex items-center gap-2 text-sm whitespace-nowrap text-custom__primary hover:text-white hover:bg-custom__primary py-1 px-2 rounded-lg border-2 border-custom__primary transition;
+    @apply font-semibold hs-tab-active:text-white hs-tab-active:bg-custom__primary inline-flex items-center gap-1 lg:gap-2 text-xs lg:text-sm whitespace-nowrap text-custom__primary hover:text-white hover:bg-custom__primary py-1 px-2 rounded-lg border-2 border-custom__primary transition;
   }
   .input__input {
     @apply py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary;

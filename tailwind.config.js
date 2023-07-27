@@ -15,9 +15,6 @@ module.exports = {
         'custom__alert': '#D02424',
         'custom__tabBtn': '#2E3A59',
       },
-      brightness: {
-        500: '5',
-      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
