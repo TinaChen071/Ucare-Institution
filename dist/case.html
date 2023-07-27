@@ -956,9 +956,29 @@
           </div>
 
           <!-- 圖示模式 -->
-          <div id="basic-tabs-img" class="hidden p-8 bg-white border-t border-gray-200" role="tabpanel" aria-labelledby="basic-tabs-item-img">
+          <div id="basic-tabs-img" class="hidden px-8 py-6 bg-white border-t border-gray-200" role="tabpanel" aria-labelledby="basic-tabs-item-img">
+            <!-- 標記 -->
+            <ul class="list-none flex gap-4 pb-6">
+              <li>
+                <i class="fa-solid fa-circle text-custom__blue--dark"></i>
+                男生
+              </li>
+              <li>
+                <i class="fa-solid fa-circle text-custom__primary"></i>
+                女生
+              </li>
+              <li>
+                <i class="fa-solid fa-circle text-custom__green--dark"></i>
+                特殊病患
+              </li>
+              <li>
+                <i class="fa-solid fa-circle text-gray-400"></i>
+                空
+              </li>
+            </ul>
 
-            <div class="grid grid-cols-2  lg:grid-cols-4 gap-4 lg:gap-8">
+            <!-- 卡片 -->
+            <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
               <!-- 01 -->
               <div class="flex flex-col bg-white border shadow-md rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                 <!-- 標題 -->
@@ -982,7 +1002,10 @@
                   <!-- 照片 -->
                   <div class="absolute -top-4">
                     <span class="relative inline-block">
-                      <img class="h-20 w-20 rounded-full object-cover" src="https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg" alt="">
+                      <div class="h-20 w-20 rounded-full  border-2 border-gray-50 bg-gray-200 overflow-hidden">
+                        <img src="https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg" alt="" class="object-cover w-full h-full">
+                      </div>
+                      
                       <button type="button" class="absolute -right-2 bottom-0 block border border-gray-100 bg-white p-0.5 shadow-md rounded-md hover:bg-custom__tabBtn group transition">
                         <img src="../img/control.svg" alt="" class="group-hover:brightness-[10]">
                       </button>
@@ -997,7 +1020,7 @@
                       000205
                     </div>
                     <!-- 姓名 -->
-                    <p class="text-3xl font-bold">
+                    <p class="text-xl md:text-3xl font-bold tracking-widest">
                       范紹勳
                     </p>
                     <!-- 標籤 -->
@@ -1007,7 +1030,7 @@
                       <span>傷</span>
                     </div>
                     <!-- icon -->
-                    <div class="flex flex-row flex-wrap gap-2 justify-center place-items-center">
+                    <div class="flex flex-row flex-wrap gap-1 justify-center place-items-center">
                       <!-- 01 -->
                       <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
                         <img src="../img/bed-1.svg" alt="" class=" group-hover:brightness-[10]">
@@ -1040,7 +1063,7 @@
               <!-- 02 -->
               <div class="flex flex-col bg-white border shadow-md rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                 <!-- 標題 -->
-                <div class="flex justify-between bg-custom__blue--dark border-b rounded-t-xl py-2 px-4 items-center ">
+                <div class="flex justify-between bg-custom__primary border-b rounded-t-xl py-2 px-4 items-center ">
 
                   <!-- 編號 -->
                   <p class="mt-1 text-sm text-white ">
@@ -1060,7 +1083,9 @@
                   <!-- 照片 -->
                   <div class="absolute -top-4">
                     <span class="relative inline-block">
-                      <img class="h-20 w-20 rounded-full object-cover" src="https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg" alt="">
+                      <div class="h-20 w-20 rounded-full  border-2 border-gray-50 bg-gray-200 overflow-hidden">
+                        <img src="https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg" alt="" class="object-cover w-full h-full">
+                      </div>
                       <button type="button" class="absolute -right-2 bottom-0 block border border-gray-100 bg-white p-0.5 shadow-md rounded-md hover:bg-custom__tabBtn group transition">
                         <img src="../img/control.svg" alt="" class="group-hover:brightness-[10]">
                       </button>
@@ -1071,12 +1096,12 @@
                   <div class="flex flex-col  place-items-center gap-2 pt-14 w-full">
                     <!-- 編號 -->
                     <div class="text-xs font-bold text-gray-800 dark:text-white  flex gap-1">
-                      <img src="../img/man.svg" alt="">
+                      <img src="../img/woman.svg" alt="">
                       000205
                     </div>
                     <!-- 姓名 -->
-                    <p class="text-3xl font-bold">
-                      范紹勳
+                    <p class="text-xl md:text-3xl font-bold tracking-widest">
+                      王靜
                     </p>
                     <!-- 標籤 -->
                     <div class="rounded-full bg-gray-200 w-full py-1 text-xs text-center grid grid-cols-3 divide-x divide-black px-4 mb-2">
@@ -1085,7 +1110,7 @@
                       <span>傷</span>
                     </div>
                     <!-- icon -->
-                    <div class="flex flex-row flex-wrap gap-2 justify-center place-items-center">
+                    <div class="flex flex-row flex-wrap gap-1 justify-center place-items-center">
                       <!-- 01 -->
                       <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
                         <img src="../img/bed-1.svg" alt="" class=" group-hover:brightness-[10]">
@@ -1118,7 +1143,7 @@
               <!-- 03 -->
               <div class="flex flex-col bg-white border shadow-md rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                 <!-- 標題 -->
-                <div class="flex justify-between bg-custom__blue--dark border-b rounded-t-xl py-2 px-4 items-center ">
+                <div class="flex justify-between bg-custom__green--dark border-b rounded-t-xl py-2 px-4 items-center ">
 
                   <!-- 編號 -->
                   <p class="mt-1 text-sm text-white ">
@@ -1138,7 +1163,9 @@
                   <!-- 照片 -->
                   <div class="absolute -top-4">
                     <span class="relative inline-block">
-                      <img class="h-20 w-20 rounded-full object-cover" src="https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg" alt="">
+                      <div class="h-20 w-20 rounded-full  border-2 border-gray-50 bg-gray-200 overflow-hidden">
+                        <img src="https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg" alt="" class="object-cover w-full h-full ">
+                      </div>
                       <button type="button" class="absolute -right-2 bottom-0 block border border-gray-100 bg-white p-0.5 shadow-md rounded-md hover:bg-custom__tabBtn group transition">
                         <img src="../img/control.svg" alt="" class="group-hover:brightness-[10]">
                       </button>
@@ -1153,7 +1180,7 @@
                       000205
                     </div>
                     <!-- 姓名 -->
-                    <p class="text-3xl font-bold">
+                    <p class="text-xl md:text-3xl font-bold tracking-widest">
                       范紹勳
                     </p>
                     <!-- 標籤 -->
@@ -1163,7 +1190,7 @@
                       <span>傷</span>
                     </div>
                     <!-- icon -->
-                    <div class="flex flex-row flex-wrap gap-2 justify-center place-items-center">
+                    <div class="flex flex-row flex-wrap gap-1 justify-center place-items-center">
                       <!-- 01 -->
                       <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
                         <img src="../img/bed-1.svg" alt="" class=" group-hover:brightness-[10]">
@@ -1196,7 +1223,7 @@
               <!-- 04 -->
               <div class="flex flex-col bg-white border shadow-md rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                 <!-- 標題 -->
-                <div class="flex justify-between bg-custom__blue--dark border-b rounded-t-xl py-2 px-4 items-center ">
+                <div class="flex justify-between bg-gray-400 border-b rounded-t-xl py-2 px-4 items-center ">
 
                   <!-- 編號 -->
                   <p class="mt-1 text-sm text-white ">
@@ -1216,7 +1243,10 @@
                   <!-- 照片 -->
                   <div class="absolute -top-4">
                     <span class="relative inline-block">
-                      <img class="h-20 w-20 rounded-full object-cover" src="https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg" alt="">
+                      <div class="h-20 w-20 rounded-full  border-2 border-gray-50 bg-gray-200 overflow-hidden">
+                        <img src="" alt="" class="object-cover w-full h-full empty:hidden">
+                      </div>
+                      
                       <button type="button" class="absolute -right-2 bottom-0 block border border-gray-100 bg-white p-0.5 shadow-md rounded-md hover:bg-custom__tabBtn group transition">
                         <img src="../img/control.svg" alt="" class="group-hover:brightness-[10]">
                       </button>
@@ -1227,21 +1257,21 @@
                   <div class="flex flex-col  place-items-center gap-2 pt-14 w-full">
                     <!-- 編號 -->
                     <div class="text-xs font-bold text-gray-800 dark:text-white  flex gap-1">
-                      <img src="../img/man.svg" alt="">
-                      000205
+                      <img class="empty:hidden" src="../img/man.svg" alt="">
+                      000000
                     </div>
                     <!-- 姓名 -->
-                    <p class="text-3xl font-bold">
-                      范紹勳
+                    <p class="text-xl md:text-3xl font-bold tracking-widest">
+                      空
                     </p>
                     <!-- 標籤 -->
                     <div class="rounded-full bg-gray-200 w-full py-1 text-xs text-center grid grid-cols-3 divide-x divide-black px-4 mb-2">
-                      <span>假</span>
-                      <span>尿</span>
-                      <span>傷</span>
+                      <span>&nbsp</span>
+                      <span>&nbsp</span>
+                      <span>&nbsp</span>
                     </div>
                     <!-- icon -->
-                    <div class="flex flex-row flex-wrap gap-2 justify-center place-items-center">
+                    <div class="flex flex-row flex-wrap gap-1 justify-center place-items-center">
                       <!-- 01 -->
                       <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
                         <img src="../img/bed-1.svg" alt="" class=" group-hover:brightness-[10]">

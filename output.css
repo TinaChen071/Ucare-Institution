@@ -702,6 +702,12 @@ select{
     width: 100%;
   }
 
+  @media (min-width: 375px){
+    .section{
+      max-width: 375px;
+    }
+  }
+
   @media (min-width: 640px){
     .section{
       max-width: 640px;
@@ -1577,12 +1583,12 @@ select{
   resize: both;
 }
 
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.list-none{
+  list-style-type: none;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-3{
@@ -1850,6 +1856,11 @@ select{
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-gray-50{
+  --tw-border-opacity: 1;
+  border-color: rgb(249 250 251 / var(--tw-border-opacity));
+}
+
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1912,6 +1923,11 @@ select{
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-gray-900{
@@ -1992,10 +2008,6 @@ select{
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-8{
-  padding: 2rem;
 }
 
 .px-1{
@@ -2084,6 +2096,10 @@ select{
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .pl-2{
@@ -2196,6 +2212,10 @@ select{
   letter-spacing: 3em;
 }
 
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
 .text-blue-400{
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -2204,6 +2224,11 @@ select{
 .text-custom__blue--dark{
   --tw-text-opacity: 1;
   color: rgb(75 127 228 / var(--tw-text-opacity));
+}
+
+.text-custom__green--dark{
+  --tw-text-opacity: 1;
+  color: rgb(158 200 106 / var(--tw-text-opacity));
 }
 
 .text-custom__orange--dark{
@@ -2464,6 +2489,10 @@ html {
   width: 100%;
 }
 
+.empty\:hidden:empty{
+  display: none;
+}
+
 .hover\:rotate-180:hover{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2696,6 +2725,16 @@ html {
   }
 }
 
+@media (min-width: 375px){
+  .xs\:grid{
+    display: grid;
+  }
+
+  .xs\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 640px){
   .sm\:mx-auto{
     margin-left: auto;
@@ -2724,6 +2763,10 @@ html {
 
   .sm\:max-w-lg{
     max-width: 32rem;
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-7{
@@ -2852,6 +2895,11 @@ html {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -2895,8 +2943,8 @@ html {
     gap: 4rem;
   }
 
-  .lg\:gap-8{
-    gap: 2rem;
+  .lg\:gap-6{
+    gap: 1.5rem;
   }
 
   .lg\:px-20{

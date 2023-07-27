@@ -15,6 +15,9 @@ module.exports = {
         'custom__alert': '#D02424',
         'custom__tabBtn': '#2E3A59',
       },
+      screens: {
+        'xs': '375px',
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
