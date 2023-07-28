@@ -155,7 +155,7 @@
         @apply text-center text-custom__primary text-sm font-semibold leading-6 mx-auto
     }
     .function__btn {
-        @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-custom__primary w-fit;
+        @apply bg-white p-4 rounded-full border-2 border-red-200 hover:bg-red-200 hover:border-custom__primary w-fit 
     }
 
     .tab__text {
