@@ -1289,18 +1289,6 @@ select{
   top: 100%;
 }
 
-.top-1\/2{
-  top: 50%;
-}
-
-.-top-1\/2{
-  top: -50%;
-}
-
-.bottom-1{
-  bottom: 0.25rem;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -1950,6 +1938,10 @@ select{
   background-color: rgb(217 102 123 / var(--tw-bg-opacity));
 }
 
+.bg-custom__primary\/80{
+  background-color: rgb(217 102 123 / 0.8);
+}
+
 .bg-custom__primary\/90{
   background-color: rgb(217 102 123 / 0.9);
 }
@@ -2020,14 +2012,6 @@ select{
 
 .bg-white\/75{
   background-color: rgb(255 255 255 / 0.75);
-}
-
-.bg-custom__primary\/60{
-  background-color: rgb(217 102 123 / 0.6);
-}
-
-.bg-custom__primary\/80{
-  background-color: rgb(217 102 123 / 0.8);
 }
 
 .bg-opacity-50{
@@ -2522,6 +2506,13 @@ html {
 }
 
 #bg {
+  background-image: url(img/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#avatar {
   background-image: url(https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg);
   background-size: cover;
   background-position: center;

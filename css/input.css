@@ -184,6 +184,11 @@ html {
   }
 }
 #bg {
+  background-image: url(img/bg.png);
+  @apply bg-cover bg-no-repeat bg-center;
+}
+
+#avatar {
   background-image: url(https://image1.gamme.com.tw/news2/2017/49/24/q6CVnZ2YlKOesA.jpg);
   @apply bg-cover bg-no-repeat bg-center;
 }
