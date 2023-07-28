@@ -513,8 +513,14 @@
             <i class="fa-solid fa-chevron-right text-gray-800 text-sm"></i>
           </li>
 
+          <a href="../dist/function.html" class="breadcrumb--default ">功能</a>
+
           <li>
-            <a href="../dist/function.html" class="breadcrumb--active ">功能</a>
+            <i class="fa-solid fa-chevron-right text-gray-800 text-sm"></i>
+          </li>
+
+          <li>
+            <a href="../dist/care.html" class="breadcrumb--active ">護理</a>
           </li>
           
         </ol>
@@ -586,130 +592,25 @@
           <!-- 灰色背景 -->
           <div class="bg-neutral-300 p-14 hidden lg:block"></div>
 
-          <!-- 按鈕區塊 01 -->
-          <div class="divide-y">
-            <!-- 標題 -->
-            <p class="text-center p-2 text-lg font-medium text-custom__tabBtn shadow-sm">連續性填寫表單</p>
-            <!-- 按鈕區塊 -->
-            <div class="grid grid-cols-3 md:grid-cols-6 py-10 px-12 gap-4">
-              <!-- BTN 01 -->
-              <a href="../dist/care.html" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/護理.svg" alt="" class="">
-                  </div>
-                </div>
-                護理
-              </a>
-              <!-- BTN 02 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/每季評估.svg" alt="" class="">
-                  </div>
-                </div>
-                每季評估
-              </a>
-              <!-- BTN 03 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/新入住.svg" alt="" class="">
-                  </div>
-                </div>
-                新入住
-              </a>
-              <!-- BTN 04 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/新入住.svg" alt="" class="">
-                  </div>
-                </div>
-                新入住
-              </a>
-              <!-- BTN 05 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/測試連續.svg" alt="" class="">
-                  </div>
-                </div>
-                測試連續
-              </a>
-              <!-- BTN 06 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/每季評估.svg" alt="" class="">
-                  </div>
-                </div>
-                每季評估
-              </a>
-            </div>
+          <!-- 功能按鈕區塊 -->
+        <div class="flex flex-col sm:flex-row justify-between bg-white px-4 py-6 gap-4">
+
+          <!-- 篩選 BTN -->
+          <div class="">
+            <select class="py-2 px-4 pr-9 input__input">
+              <option selected>請選擇日期編輯資料或新增紀錄</option>
+              <option>新增紀錄</option>
+              <option>2023/07/28</option>
+              <option>2023/07/31</option>
+            </select>
           </div>
-          <!-- 按鈕區塊 02 -->
-          <div class="divide-y">
-            <!-- 標題 -->
-            <p class="text-center p-2 text-lg font-medium text-custom__tabBtn shadow-sm">連續性填寫表單</p>
-            <!-- 按鈕區塊 -->
-            <div class="grid grid-cols-3 md:grid-cols-6 py-10 px-12 gap-4">
-              <!-- BTN 01 -->
-              <a href="../dist/care.html" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/護理.svg" alt="" class="">
-                  </div>
-                </div>
-                護理
-              </a>
-              <!-- BTN 02 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/每季評估.svg" alt="" class="">
-                  </div>
-                </div>
-                每季評估
-              </a>
-              <!-- BTN 03 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/新入住.svg" alt="" class="">
-                  </div>
-                </div>
-                新入住
-              </a>
-              <!-- BTN 04 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/新入住.svg" alt="" class="">
-                  </div>
-                </div>
-                新入住
-              </a>
-              <!-- BTN 05 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/測試連續.svg" alt="" class="">
-                  </div>
-                </div>
-                測試連續
-              </a>
-              <!-- BTN 06 -->
-              <a href="#" class="function__text">
-                <div class="function__btn p-4 mb-2 rounded-full">
-                  <div class=" text-center ">
-                    <img src="../img/每季評估.svg" alt="" class="">
-                  </div>
-                </div>
-                每季評估
-              </a>
-            </div>
-          </div>
+
+          <!-- 前往 BTN -->
+          <button type="button" class="modal__BTN group px-6" data-hs-overlay="#hs-vertically-centered-modal">
+            前往
+          </button>
+
+        </div>
 
         </div>
       </div>
