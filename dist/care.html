@@ -791,8 +791,8 @@
                           </div>
                           
                           <!-- 照片 -->
-                          <div class="lg:col-span-1 row-span-3 order-first lg:order-none  whitespace-nowrap border-l">
-                            <div class="px-6 py-1.5">
+                          <div class="lg:col-span-1 row-span-5 order-first lg:order-none  whitespace-nowrap lg:border-l ">
+                            <div class="px-6 py-1.5 border-b lg:border-b-0">
                               <a class="inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 hover:underline font-medium" href="#">
                                 Edit
                               </a>
@@ -884,8 +884,220 @@
                             <div class=" table__title ">
                               入住體重
                             </div>
-                            <div class="col-span-3 table__field">
+                            <div class="col-span-3 table__field whitespace-normal ">
                               <p class="text-gray-500 text-sm text-center">帶入入住後第一次量測生理數值的體重</p>
+                            </div>
+                          </div>
+
+                          <!-- 來源 -->
+                          <div class="lg:col-span-2 grid grid-cols-5 items-center">
+                            <div class=" table__title ">
+                              來源
+                            </div>
+                            <div class="col-span-3 table__field">
+                              <input type="text" class="input__input" placeholder="Small size">
+                            </div>
+                          </div>
+
+                          <!-- 入住日期 -->
+                          <div class="lg:col-span-2 grid grid-cols-5 items-center">
+                            <div class=" table__title ">
+                              入住日期
+                            </div>
+                            <div class="col-span-3 table__field">
+                              <input type="date" class="text-gray-500 input__input" >
+                            </div>
+                          </div>
+
+                          <!-- 肖像權 -->
+                          <div class="lg:col-span-5 grid grid-cols-5 items-center">
+                            <div class="col-span-2 table__title">
+                              肖像權
+                            </div>
+                            <div class=" table__field flex flex-col md:flex-row gap-4">
+                              <!-- 拍照 Tab -->
+                              <nav class="flex w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+
+                                <!-- 01 -->
+                                <button type="button" class="table__inputTab group" active>
+                                  同意拍照
+                                </button>
+                  
+                                <!-- 02 -->
+                                <button type="button" class="table__inputTab group" active>
+                                  不同意拍照
+                                </button>
+                  
+                              </nav>
+                              <!-- 公開 Tab -->
+                              <nav class="flex w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+
+                                <!-- 01 -->
+                                <button type="button" class="table__inputTab group" active>
+                                  同意公開
+                                </button>
+                  
+                                <!-- 02 -->
+                                <button type="button" class="table__inputTab group" active>
+                                  不同意公開
+                                </button>
+                  
+                              </nav>
+                            </div>
+                          </div>
+
+                          <!-- 戶籍地址 -->
+                          <div class="lg:col-span-5 grid grid-cols-5 items-center">
+                            <div class="col-span-2 table__title">
+                              戶籍地址
+                            </div>
+                            <div class="col-span-3 table__field grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                              <div class="">
+                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">郵遞區號</label>
+                                <div class=" ">
+                                  <input type="text" class="input__input" placeholder="Small size">
+                                </div>
+                              </div>
+                      
+                              <div class="">
+                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">縣市</label>
+                                <div class="">
+                                  <select class="py-2 px-4 pr-9 input__input">
+                                    <option selected>台北市</option>
+                                    <option>新北市</option>
+                                    <option>桃園市</option>
+                                    <option>新竹市</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="">
+                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">市區鄉鎮</label>
+                                <div class="">
+                                  <select class="py-2 px-4 pr-9 input__input">
+                                    <option selected>中正區</option>
+                                    <option>大同區</option>
+                                    <option>大同區</option>
+                                    <option>中山區</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="">
+                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">里鄰</label>
+                                <div class=" ">
+                                  <input type="text" class="input__input" placeholder="Small size">
+                                </div>
+                              </div>
+
+                              <div class="col-span-2 lg:col-span-5">
+                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">路/街</label>
+                                <div class="flex gap-4 ">
+                                  <input type="text" class="input__input" placeholder="Small size">
+                                  <input type="text" class="input__input" placeholder="Small size">
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- 診斷 -->
+                          <div class="lg:col-span-5 grid grid-cols-5 items-center">
+                            <div class="col-span-2 table__title">
+                              診斷
+                            </div>
+                            <div class=" table__field flex flex-col md:flex-row gap-4">
+                              <ul class="list-decimal list-inside">
+                                <li>
+                                  <input type="text" class="input__input inline-flex" placeholder="Small size">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- 身心障礙證明 -->
+                          <div class="lg:col-span-5 grid grid-cols-5 items-center">
+                            <div class="col-span-2 table__title">
+                              身心障礙證明
+                            </div>
+                            <div class="col-span-3 table__field flex flex-col gap-4">
+                              <!-- 舊類別 -->
+                              <div class="flex py-3 gap-4">
+                                <p>舊類別：</p>
+                                <div class="">
+                                  <select class="py-2 px-4 pr-9 input__input">
+                                    <option selected>預設選項</option>
+                                    <option>選項1</option>
+                                    <option>選項2</option>
+                                    <option>選項3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <!-- 新類別 -->
+                              <div class="flex py-3 gap-4">
+                                <p>新類別：</p>
+                                <ul class="max-w-sm flex flex-col gap-3">
+                                  <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
+                                    <div class="relative flex items-start w-full">
+                                      <div class="flex items-center h-5">
+                                        <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" checked>
+                                      </div>
+                                      <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                        第一類 神經系統構造及精神、心智功能
+                                      </label>
+                                    </div>
+                                  </li>
+                                
+                                  <li class="inline-flex items-center gap-x-2 font-medium bg-white  text-gray-800 ">
+                                    <div class="relative flex items-start w-full">
+                                      <div class="flex items-center h-5">
+                                        <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                      </div>
+                                      <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                        第二類 眼、耳及相關構造與感官功能及疼痛
+                                      </label>
+                                    </div>
+                                  </li>
+                                
+                                  <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
+                                    <div class="relative flex items-start w-full">
+                                      <div class="flex items-center h-5">
+                                        <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                      </div>
+                                      <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                        第三類 涉及聲音與言語構造及其功能
+                                      </label>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- 等級程度 -->
+                              <div class="grid grid-cols-2 lg:grid-cols-5 py-3 gap-4 items-end">
+                                <div class="flex flex-col lg:col-span-2">
+                                  <p>等級程度：</p>
+                                  <div class="">
+                                    <select class="py-2 px-4 pr-9 input__input">
+                                      <option selected>輕度</option>
+                                      <option>中度</option>
+                                      <option>重度</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="flex flex-col lg:col-span-2">
+                                  <p>有效期限：</p>
+                                  <div class="">
+                                    <input type="date" class="text-gray-500 input__input" >
+                                  </div>
+                                </div>
+
+                                <button type="button" class="col-span-2 lg:col-span-1 modal__BTN group px-6 h-fit flex justify-center text-sm" data-hs-overlay="#hs-vertically-centered-modal">
+                                  設定提醒
+                                </button>
+
+                              </div>
+
                             </div>
                           </div>
                           
