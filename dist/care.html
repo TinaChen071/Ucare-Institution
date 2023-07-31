@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>功能</title>
+    <title>護理</title>
 
     <!-- Main css -->
     <link rel="stylesheet" href="../output.css">
@@ -14,7 +14,7 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+  
     
 </head>
 <body>
@@ -270,9 +270,9 @@
         <!-- 按鈕 -->
         <div class="flex gap-x-4 justify-center">
           <!-- btn 1 -->
-          <a href="../dist/case.html" class="menu__btn group">
+          <a href="#" class="menu__btn group bg-red-400">
             <div class="w-8 h-8 text-center">
-              <img src="../img/Nav BTN-1.svg" alt="" class="group-hover:brightness-[10] group-focus:brightness-[10]">
+              <img src="../img/Nav BTN-1.svg" alt="" class="group-hover:brightness-[10] brightness-[10]">
             </div>
           </a>
           <!-- btn 2 -->
@@ -292,7 +292,7 @@
         <!-- 下排按鈕文字 -->
         <div class=" bg-white py-2 ">
           <div class="flex gap-x-16 justify-center">
-            <a href="../dist/case.html" class="whitespace-nowrap nav__btn">個案</a>
+            <a href="" class="whitespace-nowrap nav__btn text-custom__primary">個案</a>
             <a href="" class="whitespace-nowrap nav__btn">照服</a>
             <a href="" class="whitespace-nowrap nav__btn">生理</a>
           </div>
@@ -578,7 +578,7 @@
       </nav>
 
       <!-- 主要內容區塊 -->
-      <div class="relative flex flex-col lg:pt-28">
+      <div class="relative flex flex-col lg:pt-28 gap-8">
 
         <!-- 個人資料卡 -->
         <div class="lg:vertical__center lg:top-2  lg:w-11/12 xl:w-4/5  w-full flex lg:flex-row bg-white rounded-xl md:rounded-r-xl lg:rounded-l-[100px] overflow-hidden place-items-center py-6 lg:p-2 px-8 shadow-md lg:divide-x-2 divide-custom__primary gap-6 border-2 border-custom__primary lg:border-none mb-4 lg:mb-0">
@@ -644,26 +644,81 @@
           <div class="bg-neutral-300 p-14 hidden lg:block"></div>
 
           <!-- 功能按鈕區塊 -->
-        <div class="flex flex-col sm:flex-row justify-between bg-white px-4 py-6 gap-4">
+          <div class="flex flex-col sm:flex-row justify-between bg-white px-4 py-6 gap-4">
 
-          <!-- 篩選 BTN -->
-          <div class="">
-            <select class="py-2 px-4 pr-9 input__input">
-              <option selected>請選擇日期編輯資料或新增紀錄</option>
-              <option>新增紀錄</option>
-              <option>2023/07/28</option>
-              <option>2023/07/31</option>
-            </select>
+            <!-- 篩選 BTN -->
+            <div class="">
+              <select class="py-2 px-4 pr-9 input__input">
+                <option selected>請選擇日期編輯資料或新增紀錄</option>
+                <option>新增紀錄</option>
+                <option>2023/07/28</option>
+                <option>2023/07/31</option>
+              </select>
+            </div>
+
+            <!-- 前往 BTN -->
+            <button type="button" class="modal__BTN group px-6" data-hs-overlay="#hs-vertically-centered-modal">
+              前往
+            </button>
+
           </div>
 
-          <!-- 前往 BTN -->
-          <button type="button" class="modal__BTN group px-6" data-hs-overlay="#hs-vertically-centered-modal">
-            前往
+        </div>
+
+        <!-- 表單區塊 -->
+        <div class="h-12 w-full relative flex" >
+          <!-- 日期 Tab -->
+          <div class="w-11/12 mx-auto">
+            <ul class="flex gap-4 justify-start h-full  items-center overflow-auto" id="pills-tab">
+              <li class="table__tab group border-b-custom__primary">
+                <button type="button" class="table__BTN group-active:text-custom__primary text-custom__primary font-medium">新增紀錄</button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+              <li class="table__tab group">
+                <button type="button" class="table__BTN"><time>2023/08/01</time></button>
+              </li>
+
+            </ul>
+          </div>
+          
+          <!-- 左按鈕 -->
+          <button class="arrow-left absolute top-2 bg-white rounded-lg shadow-md border-2 hover:border-custom__primary px-2.5 py-1 transition duration-200 group">
+            <i class="fa-solid fa-chevron-left group-hover:text-custom__primary"></i>
           </button>
 
+          <!-- 右按鈕 -->
+          <button class="arrow-right absolute top-2 right-0 bg-white rounded-lg shadow-md border-2 hover:border-custom__primary px-2.5 py-1 transition duration-200 group">
+            <i class="fa-solid fa-chevron-right group-hover:text-custom__primary"></i>
+          </button>
+           
+        
         </div>
+        
 
-        </div>
+
       </div>
     </div>
 
@@ -708,8 +763,6 @@
   </footer>
   <!-- Footer 區塊 End -->
       
-
-
   
   <!-- jQuery main -->
   <script src="../js/jquery-3.6.3.min.js"></script>
@@ -720,6 +773,7 @@
 
   <!-- Swiper -->
   <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+  
     
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>

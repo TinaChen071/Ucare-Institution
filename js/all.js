@@ -4,12 +4,12 @@ $(document).ready(function () {
       const swiper = new Swiper('.swiper', {
       // Optional parameters
       // direction: 'vertical',
-      loop: true,
+      // loop: true,
 
       // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      // },
 
       // Navigation arrows
       navigation: {
@@ -18,9 +18,9 @@ $(document).ready(function () {
       },
 
      // auto play
-      autoplay: {
-      delay: 3000,
-      },
+      // autoplay: {
+      // delay: 3000,
+      // },
 
       // And if we need scrollbar
     //   scrollbar: {
@@ -64,3 +64,12 @@ function function__dropdown() {
 function sort(x) {
   x.classList.toggle("fa-sort-up");
 }
+
+// Table-scroll tab 
+$('.arrow-right').on('click', function () {
+  document.getElementById('pills-tab').scrollLeft += 140;
+});
+
+$('.arrow-left').on('click', function () {
+  document.getElementById('pills-tab').scrollLeft -= 140;
+});

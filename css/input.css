@@ -16,13 +16,9 @@ html {
 }
 
 .swiper {
-  --swiper-theme-color: white;
-  --swiper-navigation-color: white;
-  --swiper-navigation-size: 30px;
-}
-
-.mainMenu > li > a {
-  display: block;
+  --swiper-navigation-color: #D9667B;
+  --swiper-navigation-size: 12px;
+  --swiper-navigation-top-offset: 40%;
 }
 
 @layer components {
@@ -181,6 +177,12 @@ html {
   }
   .input__input {
     @apply py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary;
+  }
+  .table__tab {
+    @apply border-b-2 py-1 hover:border-b-2 hover:border-b-custom__primary transition duration-200 active:text-custom__primary;
+  }
+  .table__BTN {
+    @apply group-hover:text-custom__primary whitespace-nowrap;
   }
 }
 #bg {
