@@ -670,7 +670,7 @@
           <!-- 日期 Tab -->
           <div class="h-12 w-full relative flex" >
 
-            <div class="w-9/12 xs:w-10/12 mx-auto">
+            <div class="w-9/12 xs:w-10/12 lg:w-11/12 mx-auto">
               <ul class="flex gap-4 justify-start h-full  items-center overflow-auto" id="pills-tab">
                 <li class="table__tab group border-b-custom__primary border-b-2">
                   <button type="button" class="table__BTN group-active:text-custom__primary text-custom__primary font-medium">新增紀錄</button>
@@ -720,250 +720,260 @@
           </div>
 
           <!-- 表單 -->
-          <div class=" mx-auto">
-            <!-- Card -->
-            <div class="flex flex-col">
-              <div class="-m-1.5 overflow-x-auto">
-                <div class="p-1.5 min-w-full inline-block align-middle">
-                  <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-slate-900 dark:border-gray-700">
-                    <!-- Header -->
-                    <div class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-b border-gray-200 dark:border-gray-700">
-                      <div>
-                        <h2 class="text-xl font-semibold text-custom__primary">
-                          住民基本資料
-                        </h2>
-                      </div>
-
-                      <div>
-                        <div class="inline-flex gap-x-2">
-                          <!-- 01 -->
-                          <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
-                            <img src="../img/bed-1.svg" alt="" class=" group-hover:brightness-[10]">
-                          </button>
-
-                          <!-- 02 -->
-                          <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
-                            <img src="../img/bed-1.svg" alt="" class=" group-hover:brightness-[10]">
-                          </button>
+          <div class="flex flex-col gap-4">
+            <!-- 基本資料表單 -->
+            <div class=" mx-auto">
+              <!-- Card -->
+              <div class="flex flex-col">
+                <div class="-m-1.5 overflow-x-auto">
+                  <div class="p-1.5 min-w-full inline-block align-middle">
+                    <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden ">
+                      <!-- Header -->
+                      <div class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-b border-gray-200 ">
+                        <div>
+                          <h2 class="text-xl font-semibold text-custom__primary">
+                            住民基本資料
+                          </h2>
+                        </div>
+  
+                        <div>
+                          <div class="inline-flex gap-x-2">
+                            <!-- 01 -->
+                            <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
+                              <img src="../img/share.svg" alt="" class=" group-hover:brightness-[10]">
+                            </button>
+  
+                            <!-- 02 -->
+                            <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
+                              <img src="../img/bed-6.svg" alt="" class=" group-hover:brightness-[10]">
+                            </button>
+  
+                            <!-- 03 -->
+                            <button type="button" class="border border-gray-100 bg-white p-1 shadow-md rounded-md hover:bg-custom__tabBtn group transition w-8 h-8">
+                              <img src="../img/delete.svg" alt="" class=" group-hover:brightness-[10]">
+                            </button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <!-- End Header -->
-
-                    <!-- Table -->
-                    <div class="min-w-full  divide-y divide-gray-200 ">
-
-                      <div class="divide-y divide-gray-200 ">
-                        <!-- row 01 -->
-                        <div class=" divide-y grid lg:grid-cols-5">
-                          <!-- 住民姓名 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class="col-span-2 table__title ">
-                              住民姓名
+                      <!-- End Header -->
+  
+                      <!-- Table -->
+                      <div class="min-w-full  divide-y divide-gray-200 ">
+  
+                        <div class="divide-y divide-gray-200 ">
+                          <!-- row 01 -->
+                          <div class=" divide-y grid md:grid-cols-5">
+                            <!-- 住民姓名 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                住民姓名
+                              </div>
+                              
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
                             </div>
                             
-                            <div class="col-span-2 table__field">
-                              <input type="text" class="input__input" placeholder="Small size">
-                            </div>
-                          </div>
-                          
-                          <!-- 性別 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class="col-span-2 table__title">
-                              性別
-                            </div>
-                            <div class="col-span-2 table__field">
-                              <nav class="flex w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
-
-                                <!-- 01 -->
-                                <button type="button" class="table__inputTab group" active>
-                                  <img class="w-5 h-5  group-focus:brightness-[10]" src="../img/man.svg" alt="">
-                                  男生
-                                </button>
-                  
-                                <!-- 02 -->
-                                <button type="button" class="table__inputTab group" active>
-                                  <img class="w-5 h-5  group-focus:brightness-[10]" src="../img/woman.svg" alt="">
-                                  女生
-                                </button>
-                  
-                              </nav>
-                            </div>
-                          </div>
-                          
-                          <!-- 照片 -->
-                          <div class="lg:col-span-1 row-span-5 order-first lg:order-none  whitespace-nowrap lg:border-l ">
-                            <div class="px-6 py-1.5 border-b lg:border-b-0">
-                              <a class="inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 hover:underline font-medium" href="#">
-                                Edit
-                              </a>
-                            </div>
-                          </div>
-
-                          <!-- 身分證字號 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class=" table__title ">
-                              身分證字號
-                            </div>
-                            <div class="col-span-2 table__field">
-                              <input type="text" class="input__input" placeholder="Small size">
-                            </div>
-                          </div>
-                          
-                          <!-- 生日 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class=" table__title ">
-                              生日
-                            </div>
-                            <div class="col-span-2 table__field">
-                              <input type="date" class="text-gray-500 input__input" >
-                            </div>
-                          </div>
-
-                          <!-- 籍貫 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class=" table__title ">
-                              籍貫
-                            </div>
-                            <div class="col-span-2 table__field">
-                              <input type="text" class="input__input" placeholder="Small size">
-                            </div>
-                          </div>
-
-                          <!-- 備註 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class="col-span-2 table__title">
-                              備註
-                            </div>
-                            <div class="col-span-2 table__field ">
-                              <nav class="grid grid-cols-4 md:grid-cols-2 xl:grid-cols-4  gap-1  bg-white p-2 rounded-lg border border-gray-200 divide-x divide-gray-300 md:divide-x-0 xl:divide-x xl:divide-gray-300" aria-label="Tabs" role="tablist">
-
-                                <!-- 01 -->
-                                <div class="flex justify-center">
-                                  <button type="button" class="table__inputTab" active>
-                                    DNR
-                                  </button>
-                                </div>
-                  
-                                <!-- 02 -->
-                                <div class="flex justify-center">
-                                  <button type="button" class="table__inputTab" active>
-                                    不送醫
-                                  </button>
-                                </div>
-  
-                                <!-- 03 -->
-                                <div class="flex justify-center">
-                                  <button type="button" class="table__inputTab" active>
-                                    無DNR
-                                  </button>
-                                </div>
-  
-                                <!-- 04 -->
-                                <div class="flex justify-center">
-                                  <button type="button" class="table__inputTab " active>
-                                    安寧
-                                  </button>
-                                </div>
-                  
-                              </nav>
-                            </div>
-                          </div>
-
-                          <!-- 身高 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class=" table__title ">
-                              身高
-                            </div>
-                            <div class="col-span-2 table__field">
-                              <input type="text" class="input__input" placeholder="Small size">
-                            </div>
-                          </div>
-
-                          <!-- 入住體重 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class=" table__title ">
-                              入住體重
-                            </div>
-                            <div class="col-span-2 table__field whitespace-normal ">
-                              <p class="text-gray-500 text-sm text-center">帶入入住後第一次量測生理數值的體重</p>
-                            </div>
-                          </div>
-
-                          <!-- 來源 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class=" table__title ">
-                              來源
-                            </div>
-                            <div class="col-span-2 table__field">
-                              <input type="text" class="input__input" placeholder="Small size">
-                            </div>
-                          </div>
-
-                          <!-- 入住日期 -->
-                          <div class="lg:col-span-2 grid grid-cols-4 items-center">
-                            <div class=" table__title ">
-                              入住日期
-                            </div>
-                            <div class="col-span-2 table__field">
-                              <input type="date" class="text-gray-500 input__input" >
-                            </div>
-                          </div>
-
-                          <!-- 肖像權 -->
-                          <div class="lg:col-span-5 grid grid-cols-10 items-center">
-                            <div class=" table__title">
-                              肖像權
-                            </div>
-                            <div class=" col-span-8 table__field flex flex-col md:flex-row gap-4">
-                              <!-- 拍照 Tab -->
-                              <nav class="flex w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
-
-                                <!-- 01 -->
-                                <button type="button" class="table__inputTab group" active>
-                                  同意拍照
-                                </button>
-                  
-                                <!-- 02 -->
-                                <button type="button" class="table__inputTab group" active>
-                                  不同意拍照
-                                </button>
-                  
-                              </nav>
-                              <!-- 公開 Tab -->
-                              <nav class="flex w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
-
-                                <!-- 01 -->
-                                <button type="button" class="table__inputTab group" active>
-                                  同意公開
-                                </button>
-                  
-                                <!-- 02 -->
-                                <button type="button" class="table__inputTab group" active>
-                                  不同意公開
-                                </button>
-                  
-                              </nav>
-                            </div>
-                          </div>
-
-                          <!-- 戶籍地址 -->
-                          <div class="lg:col-span-5 grid grid-cols-10 items-center">
-                            <div class=" table__title">
-                              戶籍地址
-                            </div>
-                            <div class="col-span-8 table__field grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                              <div class="">
-                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">郵遞區號</label>
-                                <div class=" ">
-                                  <input type="text" class="input__input" placeholder="Small size">
-                                </div>
+                            <!-- 性別 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title">
+                                性別
                               </div>
-                      
+                              <div class=" table__field">
+                                <nav class="flex w-fit space-x-1 md:space-x-2 bg-white p-2 " aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    <img class="w-5 h-5  group-focus:brightness-[10]" src="../img/man.svg" alt="">
+                                    男生
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    <img class="w-5 h-5  group-focus:brightness-[10]" src="../img/woman.svg" alt="">
+                                    女生
+                                  </button>
+                    
+                                </nav>
+                              </div>
+                            </div>
+                            
+                            <!-- 照片 -->
+                            <div class="md:col-span-1 row-span-5 order-first md:order-none  whitespace-nowrap md:border-l py-4 flex flex-col place-items-center gap-4 justify-center">
+                              <div class="mx-auto h-40 w-40 rounded-full  border-2 border-gray-50 bg-gray-200 overflow-hidden object-cover" id="avatar">
+                              </div>
+
+                              <!-- 編輯 BTN -->
                               <div class="">
-                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">縣市</label>
+                                <button type="button" class=" modal__BTN group px-6 w-fit " data-hs-overlay="#hs-vertically-centered-modal">
+                                  編輯頭貼
+                                </button>
+                              </div>
+                            </div>
+  
+                            <!-- 身分證字號 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                身分證字號
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+                            
+                            <!-- 生日 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                生日
+                              </div>
+                              <div class=" table__field">
+                                <input type="date" class="text-gray-500 input__input" >
+                              </div>
+                            </div>
+  
+                            <!-- 籍貫 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                籍貫
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 備註 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title">
+                                備註
+                              </div>
+                              <div class=" table__field ">
+                                <nav class="grid grid-cols-4 md:grid-cols-2 xl:grid-cols-4  bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab" active>
+                                      DNR
+                                    </button>
+                                  </div>
+                    
+                                  <!-- 02 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab" active>
+                                      不送醫
+                                    </button>
+                                  </div>
+    
+                                  <!-- 03 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab" active>
+                                      無DNR
+                                    </button>
+                                  </div>
+    
+                                  <!-- 04 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab " active>
+                                      安寧
+                                    </button>
+                                  </div>
+                    
+                                </nav>
+                              </div>
+                            </div>
+  
+                            <!-- 身高 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                身高
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 入住體重 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                入住體重
+                              </div>
+                              <div class=" table__field whitespace-normal ">
+                                <p class="text-sm text-gray-500 ">帶入入住後第一次量測生理數值的體重</p>
+                              </div>
+                            </div>
+  
+                            <!-- 來源 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                來源
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 入住日期 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                入住日期
+                              </div>
+                              <div class=" table__field">
+                                <input type="date" class="text-gray-500 input__input" >
+                              </div>
+                            </div>
+  
+                            <!-- 肖像權 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                肖像權
+                              </div>
+                              <div class=" col-span-4 table__field flex flex-col xs:flex-row gap-2 md:gap-4">
+                                <!-- 拍照 Tab -->
+                                <nav class="grid grid-cols-2 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    同意拍照
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    不同意拍照
+                                  </button>
+                    
+                                </nav>
+                                <!-- 公開 Tab -->
+                                <nav class="grid grid-cols-2 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    同意公開
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    不同意公開
+                                  </button>
+                    
+                                </nav>
+                              </div>
+                            </div>
+  
+                            <!-- 戶籍地址 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                戶籍地址
+                              </div>
+                              <div class="col-span-4 table__field grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                                <!-- 郵遞區號 -->
                                 <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">郵遞區號</label>
+                                  <div class=" ">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                  </div>
+                                </div>
+                                <!-- 縣市 -->
+                                <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">縣市</label>
                                   <select class="py-2 px-4 pr-9 input__input">
                                     <option selected>台北市</option>
                                     <option>新北市</option>
@@ -971,11 +981,9 @@
                                     <option>新竹市</option>
                                   </select>
                                 </div>
-                              </div>
-
-                              <div class="">
-                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">市區鄉鎮</label>
+                                <!-- 市區鄉鎮 -->
                                 <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">市區鄉鎮</label>
                                   <select class="py-2 px-4 pr-9 input__input">
                                     <option selected>中正區</option>
                                     <option>大同區</option>
@@ -983,50 +991,48 @@
                                     <option>中山區</option>
                                   </select>
                                 </div>
-                              </div>
-
-                              <div class="">
-                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">里鄰</label>
-                                <div class=" ">
-                                  <input type="text" class="input__input" placeholder="Small size">
-                                </div>
-                              </div>
-
-                              <div class="col-span-2 lg:col-span-5">
-                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">路/街</label>
-                                <div class="flex gap-4 ">
-                                  <input type="text" class="input__input" placeholder="Small size">
-                                  <input type="text" class="input__input" placeholder="Small size">
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-
-                          <!-- 診斷 -->
-                          <div class="lg:col-span-5 grid grid-cols-10 items-center">
-                            <div class=" table__title">
-                              診斷
-                            </div>
-                            <div class="col-span-8 table__field flex flex-col md:flex-row gap-4">
-                              <ul class="list-decimal list-inside">
-                                <li>
-                                  <input type="text" class="input__input inline-flex" placeholder="Small size">
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-
-                          <!-- 身心障礙證明 -->
-                          <div class="lg:col-span-5 grid grid-cols-10 items-center">
-                            <div class=" table__title">
-                              身心障礙證明
-                            </div>
-                            <div class="col-span-8 table__field flex flex-col gap-4">
-                              <!-- 舊類別 -->
-                              <div class="flex py-3 gap-4">
-                                <p>舊類別：</p>
+                                <!-- 里鄰 -->
                                 <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">里鄰</label>
+                                  <div class=" ">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                  </div>
+                                </div>
+                                <!-- 路/街 -->
+                                <div class="col-span-2 lg:col-span-5">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">路/街</label>
+                                  <div class="flex flex-col md:flex-row gap-4 ">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                  </div>
+                                </div>
+  
+                              </div>
+                            </div>
+  
+                            <!-- 診斷 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                診斷
+                              </div>
+                              <div class="col-span-4 table__field flex flex-col md:flex-row gap-4">
+                                <ul class="list-decimal list-inside">
+                                  <li>
+                                    <input type="text" class="input__input inline-flex" placeholder="Small size">
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <!-- 身心障礙證明 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                身心障礙證明
+                              </div>
+                              <div class="col-span-4 table__field flex flex-col gap-4">
+                                <!-- 舊類別 -->
+                                <div class="flex py-3 gap-4">
+                                  <p>舊類別：</p>
                                   <select class="py-2 px-4 pr-9 input__input">
                                     <option selected>預設選項</option>
                                     <option>選項1</option>
@@ -1034,113 +1040,1102 @@
                                     <option>選項3</option>
                                   </select>
                                 </div>
-                              </div>
-                              <!-- 新類別 -->
-                              <div class="flex py-3 gap-4">
-                                <p>新類別：</p>
-                                <ul class="max-w-sm flex flex-col gap-3">
-                                  <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
-                                    <div class="relative flex items-start w-full">
-                                      <div class="flex items-center h-5">
-                                        <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" checked>
+                                <!-- 新類別 -->
+                                <div class="flex py-3 gap-4">
+                                  <p>新類別：</p>
+                                  <ul class="max-w-sm flex flex-col gap-3">
+                                    <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" checked>
+                                        </div>
+                                        <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                          第一類 神經系統構造及精神、心智功能
+                                        </label>
                                       </div>
-                                      <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
-                                        第一類 神經系統構造及精神、心智功能
-                                      </label>
-                                    </div>
-                                  </li>
-                                
-                                  <li class="inline-flex items-center gap-x-2 font-medium bg-white  text-gray-800 ">
-                                    <div class="relative flex items-start w-full">
-                                      <div class="flex items-center h-5">
-                                        <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                    </li>
+                                  
+                                    <li class="inline-flex items-center gap-x-2 font-medium bg-white  text-gray-800 ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                        </div>
+                                        <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                          第二類 眼、耳及相關構造與感官功能及疼痛
+                                        </label>
                                       </div>
-                                      <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
-                                        第二類 眼、耳及相關構造與感官功能及疼痛
-                                      </label>
-                                    </div>
-                                  </li>
-                                
-                                  <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
-                                    <div class="relative flex items-start w-full">
-                                      <div class="flex items-center h-5">
-                                        <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                    </li>
+                                  
+                                    <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                        </div>
+                                        <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                          第三類 涉及聲音與言語構造及其功能
+                                        </label>
                                       </div>
-                                      <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
-                                        第三類 涉及聲音與言語構造及其功能
-                                      </label>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                              <!-- 等級程度 -->
-                              <div class="grid grid-cols-2 lg:grid-cols-5 py-3 gap-4 items-end">
-                                <div class="flex flex-col lg:col-span-2">
-                                  <p>等級程度：</p>
-                                  <div class="">
-                                    <select class="py-2 px-4 pr-9 input__input">
-                                      <option selected>輕度</option>
-                                      <option>中度</option>
-                                      <option>重度</option>
-                                    </select>
-                                  </div>
+                                    </li>
+                                  </ul>
                                 </div>
-
-                                <div class="flex flex-col lg:col-span-2">
-                                  <p>有效期限：</p>
-                                  <div class="">
-                                    <input type="date" class="text-gray-500 input__input" >
+                                <!-- 等級程度 -->
+                                <div class="grid grid-cols-2 xs:grid-cols-5 py-3 gap-2 md:gap-4 items-end">
+                                  <div class="flex flex-col xs:col-span-2">
+                                    <p>等級程度：</p>
+                                    <div class="">
+                                      <select class="py-2 px-4 pr-9 input__input">
+                                        <option selected>輕度</option>
+                                        <option>中度</option>
+                                        <option>重度</option>
+                                      </select>
+                                    </div>
                                   </div>
+  
+                                  <div class="flex flex-col xs:col-span-2">
+                                    <p>有效期限：</p>
+                                    <div class="">
+                                      <input type="date" class="text-gray-500 input__input" >
+                                    </div>
+                                  </div>
+  
+                                  <button type="button" class="col-span-1 modal__BTN group  flex justify-center text-sm py-2" data-hs-overlay="#hs-vertically-centered-modal">
+                                    設定提醒
+                                  </button>
+  
                                 </div>
-
-                                <button type="button" class="col-span-2 lg:col-span-1 modal__BTN group px-6 h-fit flex justify-center text-sm" data-hs-overlay="#hs-vertically-centered-modal">
-                                  設定提醒
-                                </button>
-
+  
                               </div>
-
                             </div>
+  
+                            <!-- 重大傷病卡 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                重大傷病卡
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <!-- Tab -->
+                                <nav class="grid grid-cols-2 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    有
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    無
+                                  </button>
+                    
+                                </nav>
+                                
+                              </div>
+                            </div>
+  
+                            <!-- 重大傷病名稱 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                重大傷病名稱
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- CMS 等級 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                CMS 等級
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <select class="py-2 px-4 pr-9 input__input">
+                                  <option selected>第一級</option>
+                                  <option>第二級</option>
+                                  <option>第三級</option>
+                                  <option>第四級</option>
+                                </select>
+                              </div>
+                            </div>
+  
+                            <!-- 身份別 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                身份別
+                              </div>
+                              <div class=" col-span-4 table__field flex flex-col gap-4">
+                                <!-- Tab 01 -->
+                                <nav class="grid grid-cols-3 xs:grid-cols-5 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    一般
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    榮民
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    中低收入戶
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    低收入戶
+                                  </button>
+  
+                                  <!-- 05 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    福保
+                                  </button>
+                    
+                                </nav>
+  
+                                <!-- Tab 02 -->
+                                <nav class="grid grid-cols-3 sm:grid-cols-5 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    榮眷
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    農保
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    原住民
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+  
+                                <!-- Tab 03 -->
+                                <nav class="grid grid-cols-2 sm:grid-cols-4 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    臨托服務
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    喘息服務
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    補助類別：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+                                
+                              </div>
+                            </div>
+  
+                            <!-- 指定就診醫院 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                指定就診醫院
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 急診就診醫院 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                急診就診醫院
+                              </div>
+                              <div class=" col-span-4 table__field">
+                                <!-- Tab 01 -->
+                                <nav class="grid grid-cols-3  xs:grid-cols-4 lg:grid-cols-8 w-fit space-x-1 md:space-x-2 bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    亞東醫院
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    雙和醫院
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    恩主公醫院
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    樂生療養院
+                                  </button>
+  
+                                  <!-- 05 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    臺大醫院
+                                  </button>
+  
+                                  <!-- 06 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    榮民總醫院
+                                  </button>
+  
+                                  <!-- 07 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    耕莘醫院
+                                  </button>
+  
+                                  <!-- 08 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    慈濟醫院
+                                  </button>
+  
+                                  <!-- 09 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    馬偕醫院
+                                  </button>
+  
+                                  <!-- 10 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    縣立板橋醫院
+                                  </button>
+  
+                                  <!-- 11 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    長庚醫院
+                                  </button>
+  
+                                  <!-- 12 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    經國敏盛醫院
+                                  </button>
+  
+                                  <!-- 13 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    大敏
+                                  </button>
+  
+                                  <!-- 14 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    署桃
+                                  </button>
+  
+                                  <!-- 15 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    壢新
+                                  </button>
+  
+                                  <!-- 16 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    高雄醫院
+                                  </button>
+  
+                                  <!-- 17 -->
+                                  <button type="button" class="col-span-3 xs:col-span-4 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                    
+                                </nav>
+  
+                              </div>
+                            </div>
+  
+                            <!-- 語言能力 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                語言能力
+                              </div>
+                              <div class=" col-span-4 table__field">
+                                
+                                <!-- Tab -->
+                                <nav class="grid grid-cols-3 md:grid-cols-6 w-fit space-x-1 md:space-x-2 bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    國語
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    台語
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    客語
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    原住民語
+                                  </button>
+  
+                                  <!-- 05 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+                                
+                              </div>
+                            </div>
+  
+                            <!-- 語言表達 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                語言表達
+                              </div>
+                              <div class=" col-span-4 table__field">
+                                
+                                <!-- Tab -->
+                                <nav class="grid grid-cols-3 md:grid-cols-5 w-fit space-x-1 md:space-x-2 bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    清晰
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    表達不清
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    無法表達
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+                                
+                              </div>
+                            </div>
+                            
                           </div>
-                          
-                        </div>
-
-                      </div>
-                    </div>
-                    <!-- End Table -->
-
-                    <!-- Footer -->
-                    <div class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-t border-gray-200 dark:border-gray-700">
-                      <div>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">
-                          <span class="font-semibold text-gray-800 dark:text-gray-200">6</span> results
-                        </p>
-                      </div>
-
-                      <div>
-                        <div class="inline-flex gap-x-2">
-                          <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                            </svg>
-                            Prev
-                          </button>
-
-                          <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                            Next
-                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                            </svg>
-                          </button>
+  
                         </div>
                       </div>
+                      <!-- End Table -->
+  
                     </div>
-                    <!-- End Footer -->
                   </div>
                 </div>
               </div>
+              <!-- End Card -->
             </div>
-            <!-- End Card -->
+
+            <!-- 委託人表單 -->
+            <div class=" mx-auto">
+              <!-- Card -->
+              <div class="flex flex-col">
+                <div class="-m-1.5 overflow-x-auto">
+                  <div class="p-1.5 min-w-full inline-block align-middle">
+                    <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden ">
+                      <!-- Header -->
+                      <div class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-2 border-white rounded-xl bg-gray-300">
+                        <div>
+                          <h2 class="text-xl font-semibold text-custom__tabBtn">
+                            委託人 (中心主要聯絡人)
+                          </h2>
+                        </div>
+                      </div>
+                      <!-- End Header -->
+  
+                      <!-- Table -->
+                      <div class="min-w-full  divide-y divide-gray-200 ">
+  
+                        <div class="divide-y divide-gray-200 ">
+                          <!-- row 01 -->
+                          <div class=" divide-y grid md:grid-cols-5">
+                            <!-- 住民姓名 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                住民姓名
+                              </div>
+                              
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+                            
+                            <!-- 性別 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title">
+                                性別
+                              </div>
+                              <div class=" table__field">
+                                <nav class="flex w-fit space-x-1 md:space-x-2 bg-white p-2 " aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    <img class="w-5 h-5  group-focus:brightness-[10]" src="../img/man.svg" alt="">
+                                    男生
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    <img class="w-5 h-5  group-focus:brightness-[10]" src="../img/woman.svg" alt="">
+                                    女生
+                                  </button>
+                    
+                                </nav>
+                              </div>
+                            </div>
+                            
+                            <!-- 照片 -->
+                            <div class="md:col-span-1 row-span-5 order-first md:order-none  whitespace-nowrap md:border-l ">
+                              <div class="px-6 py-1.5 border-b md:border-b-0">
+                                <a class="inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 hover:underline font-medium" href="#">
+                                  Edit
+                                </a>
+                              </div>
+                            </div>
+  
+                            <!-- 身分證字號 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                身分證字號
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+                            
+                            <!-- 生日 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                生日
+                              </div>
+                              <div class=" table__field">
+                                <input type="date" class="text-gray-500 input__input" >
+                              </div>
+                            </div>
+  
+                            <!-- 籍貫 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                籍貫
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 備註 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title">
+                                備註
+                              </div>
+                              <div class=" table__field ">
+                                <nav class="grid grid-cols-4 md:grid-cols-2 xl:grid-cols-4  bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab" active>
+                                      DNR
+                                    </button>
+                                  </div>
+                    
+                                  <!-- 02 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab" active>
+                                      不送醫
+                                    </button>
+                                  </div>
+    
+                                  <!-- 03 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab" active>
+                                      無DNR
+                                    </button>
+                                  </div>
+    
+                                  <!-- 04 -->
+                                  <div class="flex justify-center">
+                                    <button type="button" class="table__inputTab " active>
+                                      安寧
+                                    </button>
+                                  </div>
+                    
+                                </nav>
+                              </div>
+                            </div>
+  
+                            <!-- 身高 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                身高
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 入住體重 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                入住體重
+                              </div>
+                              <div class=" table__field whitespace-normal ">
+                                <p class="text-sm text-gray-500 ">帶入入住後第一次量測生理數值的體重</p>
+                              </div>
+                            </div>
+  
+                            <!-- 來源 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                來源
+                              </div>
+                              <div class=" table__field">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 入住日期 -->
+                            <div class="table__wrapper">
+                              <div class=" table__title ">
+                                入住日期
+                              </div>
+                              <div class=" table__field">
+                                <input type="date" class="text-gray-500 input__input" >
+                              </div>
+                            </div>
+  
+                            <!-- 肖像權 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                肖像權
+                              </div>
+                              <div class=" col-span-4 table__field flex flex-col xs:flex-row gap-2 md:gap-4">
+                                <!-- 拍照 Tab -->
+                                <nav class="grid grid-cols-2 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    同意拍照
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    不同意拍照
+                                  </button>
+                    
+                                </nav>
+                                <!-- 公開 Tab -->
+                                <nav class="grid grid-cols-2 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    同意公開
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    不同意公開
+                                  </button>
+                    
+                                </nav>
+                              </div>
+                            </div>
+  
+                            <!-- 戶籍地址 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                戶籍地址
+                              </div>
+                              <div class="col-span-4 table__field grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                                <!-- 郵遞區號 -->
+                                <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">郵遞區號</label>
+                                  <div class=" ">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                  </div>
+                                </div>
+                                <!-- 縣市 -->
+                                <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">縣市</label>
+                                  <select class="py-2 px-4 pr-9 input__input">
+                                    <option selected>台北市</option>
+                                    <option>新北市</option>
+                                    <option>桃園市</option>
+                                    <option>新竹市</option>
+                                  </select>
+                                </div>
+                                <!-- 市區鄉鎮 -->
+                                <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">市區鄉鎮</label>
+                                  <select class="py-2 px-4 pr-9 input__input">
+                                    <option selected>中正區</option>
+                                    <option>大同區</option>
+                                    <option>大同區</option>
+                                    <option>中山區</option>
+                                  </select>
+                                </div>
+                                <!-- 里鄰 -->
+                                <div class="">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">里鄰</label>
+                                  <div class=" ">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                  </div>
+                                </div>
+                                <!-- 路/街 -->
+                                <div class="col-span-2 lg:col-span-5">
+                                  <label for="city" class="block text-sm font-medium leading-6 text-gray-900">路/街</label>
+                                  <div class="flex flex-col md:flex-row gap-4 ">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                    <input type="text" class="input__input" placeholder="Small size">
+                                  </div>
+                                </div>
+  
+                              </div>
+                            </div>
+  
+                            <!-- 診斷 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                診斷
+                              </div>
+                              <div class="col-span-4 table__field flex flex-col md:flex-row gap-4">
+                                <ul class="list-decimal list-inside">
+                                  <li>
+                                    <input type="text" class="input__input inline-flex" placeholder="Small size">
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <!-- 身心障礙證明 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                身心障礙證明
+                              </div>
+                              <div class="col-span-4 table__field flex flex-col gap-4">
+                                <!-- 舊類別 -->
+                                <div class="flex py-3 gap-4">
+                                  <p>舊類別：</p>
+                                  <select class="py-2 px-4 pr-9 input__input">
+                                    <option selected>預設選項</option>
+                                    <option>選項1</option>
+                                    <option>選項2</option>
+                                    <option>選項3</option>
+                                  </select>
+                                </div>
+                                <!-- 新類別 -->
+                                <div class="flex py-3 gap-4">
+                                  <p>新類別：</p>
+                                  <ul class="max-w-sm flex flex-col gap-3">
+                                    <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" checked>
+                                        </div>
+                                        <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                          第一類 神經系統構造及精神、心智功能
+                                        </label>
+                                      </div>
+                                    </li>
+                                  
+                                    <li class="inline-flex items-center gap-x-2 font-medium bg-white  text-gray-800 ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                        </div>
+                                        <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                          第二類 眼、耳及相關構造與感官功能及疼痛
+                                        </label>
+                                      </div>
+                                    </li>
+                                  
+                                    <li class="inline-flex items-center gap-x-2  font-medium bg-white  text-gray-800 ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="hs-list-group-item-checkbox-1" name="hs-list-group-item-checkbox-1" type="checkbox" class="border-gray-200 rounded text-custom__primary focus:ring-custom__primary" >
+                                        </div>
+                                        <label for="hs-list-group-item-checkbox-1" class="ml-3.5 block w-full text-sm text-gray-600 ">
+                                          第三類 涉及聲音與言語構造及其功能
+                                        </label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- 等級程度 -->
+                                <div class="grid grid-cols-2 xs:grid-cols-5 py-3 gap-2 md:gap-4 items-end">
+                                  <div class="flex flex-col xs:col-span-2">
+                                    <p>等級程度：</p>
+                                    <div class="">
+                                      <select class="py-2 px-4 pr-9 input__input">
+                                        <option selected>輕度</option>
+                                        <option>中度</option>
+                                        <option>重度</option>
+                                      </select>
+                                    </div>
+                                  </div>
+  
+                                  <div class="flex flex-col xs:col-span-2">
+                                    <p>有效期限：</p>
+                                    <div class="">
+                                      <input type="date" class="text-gray-500 input__input" >
+                                    </div>
+                                  </div>
+  
+                                  <button type="button" class="col-span-1 modal__BTN group  flex justify-center text-sm py-2" data-hs-overlay="#hs-vertically-centered-modal">
+                                    設定提醒
+                                  </button>
+  
+                                </div>
+  
+                              </div>
+                            </div>
+  
+                            <!-- 重大傷病卡 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                重大傷病卡
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <!-- Tab -->
+                                <nav class="grid grid-cols-2 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    有
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    無
+                                  </button>
+                    
+                                </nav>
+                                
+                              </div>
+                            </div>
+  
+                            <!-- 重大傷病名稱 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                重大傷病名稱
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- CMS 等級 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                CMS 等級
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <select class="py-2 px-4 pr-9 input__input">
+                                  <option selected>第一級</option>
+                                  <option>第二級</option>
+                                  <option>第三級</option>
+                                  <option>第四級</option>
+                                </select>
+                              </div>
+                            </div>
+  
+                            <!-- 身份別 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                身份別
+                              </div>
+                              <div class=" col-span-4 table__field flex flex-col gap-4">
+                                <!-- Tab 01 -->
+                                <nav class="grid grid-cols-3 xs:grid-cols-5 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    一般
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    榮民
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    中低收入戶
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    低收入戶
+                                  </button>
+  
+                                  <!-- 05 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    福保
+                                  </button>
+                    
+                                </nav>
+  
+                                <!-- Tab 02 -->
+                                <nav class="grid grid-cols-3 sm:grid-cols-5 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    榮眷
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    農保
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    原住民
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+  
+                                <!-- Tab 03 -->
+                                <nav class="grid grid-cols-2 sm:grid-cols-4 w-fit space-x-1 md:space-x-2 bg-white p-2 rounded-lg border border-gray-200 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    臨托服務
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    喘息服務
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    補助類別：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+                                
+                              </div>
+                            </div>
+  
+                            <!-- 指定就診醫院 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                指定就診醫院
+                              </div>
+                              <div class=" col-span-4 table__field ">
+                                <input type="text" class="input__input" placeholder="Small size">
+                              </div>
+                            </div>
+  
+                            <!-- 急診就診醫院 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                急診就診醫院
+                              </div>
+                              <div class=" col-span-4 table__field">
+                                <!-- Tab 01 -->
+                                <nav class="grid grid-cols-3  xs:grid-cols-4 lg:grid-cols-8 w-fit space-x-1 md:space-x-2 bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    亞東醫院
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    雙和醫院
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    恩主公醫院
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    樂生療養院
+                                  </button>
+  
+                                  <!-- 05 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    臺大醫院
+                                  </button>
+  
+                                  <!-- 06 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    榮民總醫院
+                                  </button>
+  
+                                  <!-- 07 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    耕莘醫院
+                                  </button>
+  
+                                  <!-- 08 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    慈濟醫院
+                                  </button>
+  
+                                  <!-- 09 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    馬偕醫院
+                                  </button>
+  
+                                  <!-- 10 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    縣立板橋醫院
+                                  </button>
+  
+                                  <!-- 11 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    長庚醫院
+                                  </button>
+  
+                                  <!-- 12 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    經國敏盛醫院
+                                  </button>
+  
+                                  <!-- 13 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    大敏
+                                  </button>
+  
+                                  <!-- 14 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    署桃
+                                  </button>
+  
+                                  <!-- 15 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    壢新
+                                  </button>
+  
+                                  <!-- 16 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    高雄醫院
+                                  </button>
+  
+                                  <!-- 17 -->
+                                  <button type="button" class="col-span-3 xs:col-span-4 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                    
+                                </nav>
+  
+                              </div>
+                            </div>
+  
+                            <!-- 語言能力 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                語言能力
+                              </div>
+                              <div class=" col-span-4 table__field">
+                                
+                                <!-- Tab -->
+                                <nav class="grid grid-cols-3 md:grid-cols-6 w-fit space-x-1 md:space-x-2 bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    國語
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    台語
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    客語
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    原住民語
+                                  </button>
+  
+                                  <!-- 05 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+                                
+                              </div>
+                            </div>
+  
+                            <!-- 語言表達 -->
+                            <div class="md:col-span-5 grid grid-cols-5 items-center">
+                              <div class="col-span-1 table__title">
+                                語言表達
+                              </div>
+                              <div class=" col-span-4 table__field">
+                                
+                                <!-- Tab -->
+                                <nav class="grid grid-cols-3 md:grid-cols-5 w-fit space-x-1 md:space-x-2 bg-white p-2 gap-4" aria-label="Tabs" role="tablist">
+  
+                                  <!-- 01 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    清晰
+                                  </button>
+                    
+                                  <!-- 02 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    表達不清
+                                  </button>
+  
+                                  <!-- 03 -->
+                                  <button type="button" class="table__inputTab group" active>
+                                    無法表達
+                                  </button>
+  
+                                  <!-- 04 -->
+                                  <button type="button" class="col-span-2 table__inputTab group" active>
+                                    其他：
+                                    <input type="text" class="py-1.5 input__input" placeholder="Small size">
+                                  </button>
+                                </nav>
+                                
+                              </div>
+                            </div>
+                            
+                          </div>
+  
+                        </div>
+                      </div>
+                      <!-- End Table -->
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+
+            <!-- 緊急聯絡人表單 -->
           </div>
+
+
         </div>
         
         
