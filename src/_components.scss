@@ -157,7 +157,7 @@
     }
 
     .input__input {
-        @apply py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary
+        @apply py-2 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-custom__primary focus:ring-custom__primary text-custom__tabBtn
     }
 
     .table__tab {
@@ -178,7 +178,7 @@
         @apply px-2 py-3 whitespace-nowrap col-span-4 md:col-span-2
     }
     .table__inputTab {
-        @apply font-semibold  hover:bg-gray-100 focus:text-white focus:bg-custom__tabBtn inline-flex items-center gap-2 text-sm whitespace-nowrap text-custom__tabBtn  py-1 px-2 rounded-lg transition justify-center
+        @apply font-semibold  hover:bg-gray-100 focus:text-white focus:bg-custom__tabBtn inline-flex items-center gap-2 text-sm whitespace-nowrap text-custom__tabBtn hover:text-custom__tabBtn  py-1 px-2 rounded-lg transition justify-center
     }
     
 

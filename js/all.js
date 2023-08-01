@@ -73,3 +73,47 @@ $('.arrow-right').on('click', function () {
 $('.arrow-left').on('click', function () {
   document.getElementById('pills-tab').scrollLeft -= 140;
 });
+
+
+// 表單其他按鈕(點擊狀態)
+// const myInput = document.getElementById('myInput');
+// const parentDiv = document.getElementById('parentDiv');
+// const language__BTN = document.getElementById('language__BTN');
+
+// myInput.addEventListener('focus', () => {
+//   if (myInput.focus) {
+//     $(parentDiv).addClass('bg-custom__tabBtn text-white');
+//   } else {
+//     $(parentDiv).removeClass('bg-custom__tabBtn '); 
+//   };
+//   if (myInput.hover) {
+//     $(parentDiv).addClass('bg-gray-100 text-custom__tabBtn'); 
+//   } else {
+//     $(parentDiv).removeClass('bg-gray-100');
+//   }
+// });
+
+// (點擊視窗取消)
+// const isInsideParentDiv = (target) => {
+//   return parentDiv.contains(target) || target === myInput;
+// };
+
+// document.addEventListener('click', (event) => {
+//   if (!isInsideParentDiv(event.target)) {
+    
+//     myInput.focus = false;
+
+//     $(parentDiv).removeClass('bg-custom__tabBtn text-white')
+
+//   } 
+// });
+
+
+
+// (點擊其他按鈕取消)
+// $(".language__BTN").addEventListener('click', () => {
+//   // Reset the checkbox state
+//   myInput.focus = false;
+//   // Remove the background color class from the parent div
+//   $(parentDiv).removeClass('bg-custom__tabBtn text-white') 
+// });
