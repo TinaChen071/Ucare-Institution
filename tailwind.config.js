@@ -16,7 +16,7 @@ module.exports = {
         'custom__tabBtn': '#2E3A59',
       },
       screens: {
-        'xs': '375px',
+        'xs': '480px',
       },
       spacing: {
         '128': '32rem',
