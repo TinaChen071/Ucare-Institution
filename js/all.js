@@ -42,7 +42,7 @@ const backToTopBtn = document.getElementById('backToTopBtn');
 // ToTop BTN 換顏色
 // Function to change button color when scrolling
 function updateButtonColor() {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 400) {
     backToTopBtn.classList.remove('bg-white/80', 'text-custom__primary');
     backToTopBtn.classList.add('bg-custom__primary/90', 'text-white'); // Replace with desired color classes
   } else {

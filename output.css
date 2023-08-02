@@ -1401,6 +1401,10 @@ select{
   bottom: 0px;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .bottom-6{
   bottom: 1.5rem;
 }
@@ -1431,42 +1435,6 @@ select{
 
 .top-full{
   top: 100%;
-}
-
-.right-16{
-  right: 4rem;
-}
-
-.bottom-16{
-  bottom: 4rem;
-}
-
-.right-8{
-  right: 2rem;
-}
-
-.bottom-24{
-  bottom: 6rem;
-}
-
-.bottom-40{
-  bottom: 10rem;
-}
-
-.bottom-8{
-  bottom: 2rem;
-}
-
-.bottom-4{
-  bottom: 1rem;
-}
-
-.bottom-5{
-  bottom: 1.25rem;
-}
-
-.right-5{
-  right: 1.25rem;
 }
 
 .z-10{
@@ -2312,11 +2280,6 @@ select{
   background-color: rgb(255 255 255 / 0.8);
 }
 
-.bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -2694,10 +2657,6 @@ select{
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
-.text-custom__primary\/80{
-  color: rgb(217 102 123 / 0.8);
-}
-
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2791,12 +2750,6 @@ select{
 
 .transition-transform{
   transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-opacity{
-  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -3209,12 +3162,12 @@ html {
     right: 2rem;
   }
 
-  .xs\:col-span-4{
-    grid-column: span 4 / span 4;
-  }
-
   .xs\:col-span-2{
     grid-column: span 2 / span 2;
+  }
+
+  .xs\:col-span-4{
+    grid-column: span 4 / span 4;
   }
 
   .xs\:h-fit{
@@ -3255,28 +3208,18 @@ html {
     padding-right: 1rem;
   }
 
-  .xs\:py-1{
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
   .xs\:text-left{
     text-align: left;
-  }
-
-  .xs\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .xs\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .xs\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xs\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -3639,10 +3582,6 @@ html {
 
   .lg\:grid-cols-8{
     grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  .lg\:flex-col{
-    flex-direction: column;
   }
 
   .lg\:place-items-center{
