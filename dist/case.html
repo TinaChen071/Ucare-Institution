@@ -641,22 +641,27 @@
                     </div>
 
                     <!-- 內容 -->
-                    <div class="py-4 px-8 overflow-y-auto bg-gray-100 grid gap-2 text-gray-700">
+                    <div class="py-4 px-4 md:px-8 overflow-y-auto bg-gray-100 grid gap-2 text-gray-700">
                       <!-- 姓名 -->
                       <div class="grid grid-cols-4 items-center gap-4">
                         <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap tracking-[3em]">姓名</label>
-                        <input type="text" class="col-span-2 input__input" placeholder="請輸入姓名">
-                        <div class="flex gap-4">
-                          <div class="flex">
-                            <input type="radio" name="hs-radio-group" class="input__radio " id="hs-radio-group-1" checked>
-                            <label for="hs-radio-group-1" class="text-sm text-gray-500 ml-2 ">男</label>
-                          </div>
-                        
-                          <div class="flex">
-                            <input type="radio" name="hs-radio-group" class="input__radio" id="hs-radio-group-2">
-                            <label for="hs-radio-group-2" class="text-sm text-gray-500 ml-2 ">女</label>
+
+                        <div class="col-span-3 flex gap-4 items-center">
+                          <input type="text" class=" input__input" placeholder="請輸入姓名">
+                          <!-- 性別 -->
+                          <div class="flex gap-2 md:gap-4">
+                            <div class="flex">
+                              <input type="radio" name="hs-radio-group" class="input__radio " id="hs-radio-group-1" checked>
+                              <label for="hs-radio-group-1" class="text-sm text-gray-500 ml-2 ">男</label>
+                            </div>
+                          
+                            <div class="flex">
+                              <input type="radio" name="hs-radio-group" class="input__radio" id="hs-radio-group-2">
+                              <label for="hs-radio-group-2" class="text-sm text-gray-500 ml-2 ">女</label>
+                            </div>
                           </div>
                         </div>
+                        
                       </div>
                       <!-- 身分證號碼 -->
                       <div class="grid grid-cols-4 items-center gap-4">
@@ -680,12 +685,12 @@
                         </select>
                       </div>
                       <!-- 護字號 -->
-                      <div class="grid grid-cols-4 items-center gap-4">
+                      <div class="grid grid-cols-4 xs:items-center gap-4">
                         <label for="hs-leading-icon" class="col-span-1 block text-sm font-medium whitespace-nowrap tracking-[1em]">護字號</label>
-                        <div class="col-span-3 flex gap-2">
+                        <div class="col-span-3 flex flex-col xs:flex-row gap-2">
                           <input type="text" class=" input__input " placeholder="請輸入護字號">
                         <!-- BTN -->
-                        <button type="button" class="modal__BTN group  bg-white" data-hs-overlay="#hs-vertically-centered-modal">
+                        <button type="button" class="modal__BTN group  bg-white w-fit py-2" data-hs-overlay="#hs-vertically-centered-modal">
                           由系統產生護字號
                         </button>
                         </div>
