@@ -30,6 +30,8 @@ $(document).ready(function () {
     
 });
 
+
+
 // ToTop BTN
 const backToTopBtn = document.getElementById('backToTopBtn');
 
@@ -40,7 +42,7 @@ const backToTopBtn = document.getElementById('backToTopBtn');
 // ToTop BTN 換顏色
 // Function to change button color when scrolling
 function updateButtonColor() {
-  if (window.scrollY > 400) {
+  if (window.scrollY > 300) {
     backToTopBtn.classList.remove('bg-white/80', 'text-custom__primary');
     backToTopBtn.classList.add('bg-custom__primary/90', 'text-white'); // Replace with desired color classes
   } else {
@@ -52,6 +54,25 @@ function updateButtonColor() {
 // Call the function on page load and when the user scrolls
 updateButtonColor();
 window.addEventListener('scroll', updateButtonColor);
+
+
+// 顯示狀態
+// Function to show/hide the button with a transition effect based on scroll position
+function toggleButtonVisibility() {
+  if (window.scrollY > 200) {
+    backToTopBtn.classList.remove('hidden');
+    backToTopBtn.classList.add('opacity-100');
+  } else {
+    backToTopBtn.classList.remove('opacity-100');
+    // backToTopBtn.classList.add('hidden');
+  }
+}
+
+// Call the function on page load and when the user scrolls
+toggleButtonVisibility();
+window.addEventListener('scroll', toggleButtonVisibility);
+
+
 
 
 // 密碼顯示 BTN
