@@ -1882,6 +1882,10 @@ select{
   justify-content: space-between;
 }
 
+.justify-items-stretch{
+  justify-items: stretch;
+}
+
 .gap-1{
   gap: 0.25rem;
 }
@@ -3183,6 +3187,10 @@ html {
 
   .xs\:items-center{
     align-items: center;
+  }
+
+  .xs\:text-left{
+    text-align: left;
   }
 }
 
