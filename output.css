@@ -1252,13 +1252,20 @@ select{
   justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .table__title{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -1287,7 +1294,6 @@ select{
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  white-space: nowrap;
   border-radius: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1633,37 +1639,12 @@ select{
   height: 2rem;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.h-16{
-  height: 4rem;
-}
-
-.h-40{
-  height: 10rem;
-}
-
-.h-96{
-  height: 24rem;
-}
-
-.h-64{
-  height: 16rem;
-}
-
-.h-72{
-  height: 18rem;
-}
-
 .h-80{
   height: 20rem;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .min-h-\[calc\(100\%-3\.5rem\)\]{
@@ -1882,8 +1863,8 @@ select{
   justify-content: space-between;
 }
 
-.justify-items-stretch{
-  justify-items: stretch;
+.gap-0{
+  gap: 0px;
 }
 
 .gap-1{
@@ -3152,10 +3133,6 @@ html {
 }
 
 @media (min-width: 480px){
-  .xs\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .xs\:col-span-4{
     grid-column: span 4 / span 4;
   }
@@ -3195,6 +3172,10 @@ html {
 }
 
 @media (min-width: 640px){
+  .sm\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:mx-auto{
     margin-left: auto;
     margin-right: auto;
