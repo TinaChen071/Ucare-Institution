@@ -3623,6 +3623,10 @@ html {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+
   .lg\:place-items-center{
     place-items: center;
   }
