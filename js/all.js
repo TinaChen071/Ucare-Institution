@@ -30,15 +30,29 @@ $(document).ready(function () {
     
 });
 
-// toTop BTN
-$(document).ready(function () {
-  $("#toTop").click(function (e) { 
-      e.preventDefault();
-      $("html,body").animate({
-          scrollTop:0
-      },200);
+// ToTop BTN
+const backToTopBtn = document.getElementById('backToTopBtn');
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-});
+
+// ToTop BTN 換顏色
+// Function to change button color when scrolling
+function updateButtonColor() {
+  if (window.scrollY > 400) {
+    backToTopBtn.classList.remove('bg-white/80', 'text-custom__primary');
+    backToTopBtn.classList.add('bg-custom__primary/90', 'text-white'); // Replace with desired color classes
+  } else {
+    backToTopBtn.classList.remove('bg-custom__primary/90', 'text-white');
+    backToTopBtn.classList.add('bg-white/80', 'text-custom__primary'); // Replace with initial color classes
+  }
+}
+
+// Call the function on page load and when the user scrolls
+updateButtonColor();
+window.addEventListener('scroll', updateButtonColor);
+
 
 // 密碼顯示 BTN
 function password(x) {

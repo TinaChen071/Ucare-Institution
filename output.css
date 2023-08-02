@@ -1433,6 +1433,34 @@ select{
   top: 100%;
 }
 
+.right-16{
+  right: 4rem;
+}
+
+.bottom-16{
+  bottom: 4rem;
+}
+
+.right-8{
+  right: 2rem;
+}
+
+.bottom-24{
+  bottom: 6rem;
+}
+
+.bottom-40{
+  bottom: 10rem;
+}
+
+.bottom-8{
+  bottom: 2rem;
+}
+
+.bottom-4{
+  bottom: 1rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -2013,6 +2041,10 @@ select{
   overflow-x: hidden;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .whitespace-normal{
   white-space: normal;
 }
@@ -2266,6 +2298,15 @@ select{
 
 .bg-white\/75{
   background-color: rgb(255 255 255 / 0.75);
+}
+
+.bg-white\/80{
+  background-color: rgb(255 255 255 / 0.8);
+}
+
+.bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50{
@@ -2645,6 +2686,10 @@ select{
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-custom__primary\/80{
+  color: rgb(217 102 123 / 0.8);
+}
+
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2913,6 +2958,11 @@ html {
   color: rgb(217 102 123 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:shadow-md:hover{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -3133,6 +3183,14 @@ html {
 }
 
 @media (min-width: 480px){
+  .xs\:bottom-8{
+    bottom: 2rem;
+  }
+
+  .xs\:right-8{
+    right: 2rem;
+  }
+
   .xs\:col-span-4{
     grid-column: span 4 / span 4;
   }
@@ -3174,6 +3232,16 @@ html {
     gap: 2rem;
   }
 
+  .xs\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xs\:py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
   .xs\:text-left{
     text-align: left;
   }
@@ -3181,6 +3249,16 @@ html {
   .xs\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xs\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xs\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
