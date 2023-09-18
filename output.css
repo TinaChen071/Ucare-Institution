@@ -1192,6 +1192,16 @@ select{
   color: rgb(46 58 89 / var(--tw-text-opacity));
 }
 
+.input__input::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-placeholder-opacity));
+}
+
+.input__input::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-placeholder-opacity));
+}
+
 .input__input:focus{
   --tw-border-opacity: 1;
   border-color: rgb(217 102 123 / var(--tw-border-opacity));
