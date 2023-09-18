@@ -2672,6 +2672,16 @@ select{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.placeholder-gray-300::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-300::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-placeholder-opacity));
+}
+
 .opacity-0{
   opacity: 0;
 }
